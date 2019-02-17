@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+<!-- TemplateBeginEditable name="doctitle" -->
+  <title>Big-UI - Patterns</title>
+<!-- TemplateEndEditable -->
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Geno-UI Patterns </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!--li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li-->
+          <li class="nav-item">
+            <a class="nav-link" href="#">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div>
+    <div class="row text-left">
+      <div class="col-lg-3 col-md-4 mb-6">
+        <!-- menu-->
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Filtrar
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <!--li><a href="filtro_dinamico.html">Filtro dinámico</a></li>
+                  <li><a href="distribucion_alelica.html">Distribución alélica</a></li>
+                  <li><a href="comparar_secuencias.html">Comparar secuencias</a></li-->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="true" aria-controls="collapseTwo">
+                  Visualizar
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <!--li><a href="filtro_dinamico.html">Muchas columnas</a></li-->
+                  <!--li><a href="distribucion_alelica.html">Browser Genomico</a></li-->
+                  <li><a href="cariograma.html">Cariograma</a></li>
+                  <li><a href="ideograma.html">Ideograma</a></li>
+                  <li><a href="pistas_comparativas.html">Pistas comparativas</a></li>
+                  <!--li><a href="comparar_secuencias.html">Micro consultas</a></li>
+                  <li><a href="comparar_secuencias.html">Zoom semántico</a></li-->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Genéricos
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <!--li><a href="filtro_dinamico.html">Visualizar-conectar-filtrar</a></li>
+                  <li><a href="distribucion_alelica.html">Recomendación Interaccion</a></li>
+                  <li><a href="comparar_secuencias.html">Entrega continua</a></li-->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  Acciones
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <!--li><a href="escrutinio.html">Escrutinio</a></li>
+                  <li><a href="filtromovible.html">Filtro movible</a></li>
+                  <li><a href="anotarprocedimiento.html">Anotar procedimiento</a></li>
+                  <li><a href="reusarsecuenciacomandos.html">Reusar secuencia comandos</a></li-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fin menu-->
+      </div>
+      <div class="col-lg-9 col-md-8 mb-6">
+        <!-- Contenido -->
+        <!-- TemplateBeginEditable name="contenido" -->
+         <!-- Jumbotron Header -->
+        <header class="jumbotron my-4">
+          <h1 class="display-3">Patrones de Interfaz de Usuario para Explotación de Datos Genómicos</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt
+            possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam
+            repellat.</p>
+          <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+        </header>
+		
+		<!-- TemplateEndEditable -->
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark font-small">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Geno-UI Patterns @2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
