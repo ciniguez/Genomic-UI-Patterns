@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/patronBoot.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="en">
+<!-- InstanceBegin template="/Templates/patronBoot.dwt" codeOutsideHTMLIsLocked="false" -->
 
 <head>
 
@@ -9,7 +10,7 @@
   <meta name="author" content="">
 
 
-<!-- InstanceBeginEditable name="doctitle" -->
+  <!-- InstanceBeginEditable name="doctitle" -->
   <title>Big-UI - Patterns</title>
   <!-- InstanceEndEditable -->
   <!-- Bootstrap core CSS -->
@@ -79,8 +80,8 @@
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"
-                  aria-expanded="true" aria-controls="collapseTwo">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                  aria-controls="collapseTwo">
                   Visualizar
                 </button>
               </h5>
@@ -103,7 +104,6 @@
             <div class="card-header" id="headingThree">
               <h5 class="mb-0">
                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-
                   aria-expanded="false" aria-controls="collapseThree">
                   Genéricos
                 </button>
@@ -145,114 +145,99 @@
       <div class="col-lg-9 col-md-8 mb-6">
         <!-- Contenido -->
         <!-- InstanceBeginEditable name="contenido" -->
-        <div><span style="font-size: 24px; font-weight: bold;">Ideograma</span></div>
+        <div><span style="font-size: 24px;"><span
+              style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;">Ideograma</span></span></div>
         <div><br /></div>
         <div><br /></div>
-        <div style="text-align: center;">
-          <img src="ideograma.html.resources/DA94F059-3862-4DA9-9AA0-AC77FA15C7E2.png" class="img-fluid" />
-          <br /></div>
-        <div style="text-align: center;">Ideograma de un cromosoma</div>
+        <div style="text-align: center;"><img src="ideograma.html.resources/2B416BE6-AF6D-47FA-889A-34C860462175.gif"
+            height="278" width="135" /><br /></div>
+        <div style="text-align: center;"><span style="font-size: 11px;">Ideograma del cromosoma 1. Fuente:</span><a
+            href="http://www3.uah.es/biomodel/citogene/dynacare/geninfo.htm" style="font-size: 11px;">Biomodel</a></div>
+        <div><br /></div>
         <hr />
-        <div>
-          <font style="font-size: 18px;"><span style="font-weight: bold;">Contexto:</span> </font>
+        <div><span style="font-size: 18px; font-weight: bold;">Problema:</span><span style="font-size: 18px;"> </span>
         </div>
         <ul>
           <li>
-            <div>El esquema de un cromosoma le permite al usuario identificar la disposición de variaciones o genes en
-              el cromosoma. </div>
-          </li>
-          <li>
-            <div>Usuario necesita identificar patologías asociadas a un cromosoma. Para facilitar este proceso, es
-              conveniente navegar por la secuencia genética y considerando referencias fácilmente reconocibles como
-              sectores o segmentos del cromosoma que permitan localizar una determinada variación o anomalía en la
-              secuencia genética. Dada la intensiva cantidad de datos de la secuencia y el nivel de detalle, el usuario fácilmente pierde la orientación en la secuencia de datos del cromosoma.</div>
+            <div>Cómo proveer un marco de referencia para definir visualmente posiciones dentro de un cromosoma?</div>
           </li>
         </ul>
         <hr />
-        <div>
-          <font style="font-size: 18px;"><span style="font-weight: bold;">Problema:</span> </font>
+        <div><span style="font-size: 18px; font-weight: bold;">Contexto:</span></div>
+        <ul>
+          <li>
+            <div>El análisis genético incluye identificar el o los sectores del cromosoma asociados con una anomalía.
+            </div>
+          </li>
+        </ul>
+        <hr />
+        <div><span style="font-size: 18px; font-weight: bold;">Fuerzas:</span><span style="font-size: 18px;"> </span>
         </div>
         <ul>
           <li>
-            <div>Usuario necesita navegar por la secuencia genética de un cromosoma considerando referencias fácilmente
-              reconocibles como sectores o segmentos del cromosoma.</div>
-          </li>
-        </ul>
-        <hr />
-        <div><span style="font-weight: bold;">
-            <font style="font-size: 18px;">Solución:</font>
-          </span></div>
-        <div>Desplegar un ideograma en un panel de la interfaz de usuario. Un ideograma es una representación
-          esquemática de un cromosoma, o complemento cromosómico, que incluye su patrón de bandas [1].</div>
-        <div>El ideograma representa un cromosoma compuesto de dos <span
-            style="font-style: italic; font-weight: bold;">brazos</span>. Uno largo y el otro corto, denominados <span
-            style="font-style: italic;">q</span> y <span style="font-style: italic;">p</span> respectivamente. Cada
-          brazo está delimitado por <span style="font-style: italic; font-weight: bold;">regiones</span><span
-            style="font-style: italic;" />las cuales están delimitadas por <span
-            style="font-style: italic;"> </span><span style="font-style: italic; font-weight: bold;">bandas</span><span
-            style="font-style: italic;">, </span>y estas a su vez, delimitadas por <span
-            style="font-style: italic; font-weight: bold;">sub-bandas</span><span style="font-style: italic;">.</span>
-          Las bandas son el resultado de la observación por microscopio al teñir el cromosoma con químicos y su
-          visualización está dada por una escala de grises.  </div>
-        <div>La numeración de las regiones, bandas y sub-bandas dependen del punto centro del cromosoma,
-          denominado <span style="font-style: italic;">centrómero. </span>Las bandas se numeran ascendentemente
-          empezando por 1, siendo 1 la banda más cercana al <span style="font-style: italic;">centrómero</span> del
-          cromosoma.</div>
-        <div style="text-align: center;"><br /></div>
-        <hr />
-        <div><span style="font-weight: bold;">
-            <font style="font-size: 18px;">Estructura:</font>
-          </span></div>
-        <div style="text-align: center;"><img src="ideograma.html.resources/B5FBF541-2482-452F-979A-06B7DABFB9AF.png"
-            height="316" width="329" /><br /></div>
-        <hr />
-        <div><span style="font-weight: bold;">
-            <font style="font-size: 18px;">Cuando:</font>
-          </span></div>
-        <ul>
-          <li>
-            <div>USE CUANDO existen datos acerca del patrón de bandas.</div>
+            <div>Sin un marco de referencia de alto nivel, el usuario pierde fácilmente su orientación a lo largo de la
+              secuencia genética del cromosoma. Sectorizar o segmenar el cromosoma facilita al usuario reconocer lugares
+              en la secuencia genética de un cromosoma. </div>
           </li>
           <li>
-            <div>USE CUANDO el análisis genético requiere la identificación y localización de elementos cromosómicos (p.
-              ej. Genes, variaciones genéticas, bases).</div>
-          </li>
-        </ul>
-        <div><br /></div>
-        <hr />
-        <div><span style="font-weight: bold;">
-            <font style="font-size: 18px;">Por Qué: </font>
-          </span></div>
-        <ul>
-          <li>
-            <div>En una representación esquemática de un cromosoma, las bandas cromosómicas permiten identificar a cada
-              cromosoma y localizar los <span style="font-style: italic;">loci</span> genéticos (posición o lugar dentro
-              de un cromosoma) de diferentes enfermedades mendelianas [1].</div>
+            <div>Existen datos acerca del patrón de bandas del cromosoma bajo estudio. Las bandas son el resultado de la
+              observación por microscopio al teñir el cromosoma con químicos y su visualización está definida por
+              sectores representados en escala de grises.</div>
           </li>
           <li>
             <div>La nomenclatura de las bandas está dado por el <span style="font-style: italic;">International System
                 for Chromosome Nomenclature</span> (ISCN) y distingue jerárquicamente la delimitación por cromosoma,
               brazo, región, banda y sub-banda. Por ejemplo, la nomenclatura: 7q31.2 indica que se hace referencia a un
               sector dentro del cromosoma siete, brazo largo (<span style="font-style: italic;">q</span>)<span
-                style="font-style: italic;">, </span>región tres, banda uno, y separado por el punto, la sub-banda 2,
+                style="font-style: italic;">,</span> región tres, banda uno, y separado por el punto, la sub-banda 2,
               como se muestra en la figura siguiente:</div>
           </li>
         </ul>
-        <div><img src="ideograma.html.resources/EDF03824-DB19-495C-9451-7E27C7409039.png" height="125"
-            width="248" /><br /></div>
+        <div style="text-align: center;"><img src="ideograma.html.resources/00B75D38-155E-499E-AB3B-AD3B9616B005.png"
+            height="125" width="248" /><br /></div>
         <hr />
-        <div><span style="font-weight: bold;">
-            <font style="font-size: 18px;">Ejemplos:</font>
-          </span></div>
+        <div><span style="font-size: 18px; font-weight: bold;">Solución:</span></div>
+        <div>Desplegar un ideograma en un panel de la interfaz de usuario. Un ideograma es una representación
+          esquemática de un cromosoma, o complemento cromosómico, que incluye su patrón de bandas [1]. Las bandas
+          cromosómicas permiten identificar a cada cromosoma y localizar los <span
+            style="font-style: italic;">loci</span> genéticos (posición o lugar dentro de un cromosoma) asociados a
+          patologías relevantes (p. ej. posiciones de la secuencia cromosómica asociadas a enfermedades mendelianas
+          [1]).</div>
+        <div><span>    </span>El ideograma representa un cromosoma compuesto de dos <span
+            style="font-style: italic; font-weight: bold;">brazos:</span> <span style="font-style: italic;">u</span>no
+          largo y el otro corto, denominados <span style="font-style: italic;">q</span> y <span
+            style="font-style: italic;">p</span> respectivamente. Cada brazo está delimitado por <span
+            style="font-style: italic; font-weight: bold;">regiones</span> las cuales están delimitadas por <span
+            style="font-style: italic;"> </span><span style="font-style: italic; font-weight: bold;">bandas</span><span
+            style="font-style: italic;">,</span> y estas a su vez, delimitadas por <span
+            style="font-style: italic; font-weight: bold;">sub-bandas</span><span
+            style="font-style: italic;">.</span> La numeración de las regiones, bandas y sub-bandas dependen del punto
+          centro del cromosoma, denominado <span style="font-style: italic;">centrómero. </span>Las bandas se numeran
+          ascendentemente empezando por 1, siendo 1 la banda más cercana al <span
+            style="font-style: italic;">centrómero</span> del cromosoma.</div>
+        <hr />
+        <div><span style="font-size: 18px; font-weight: bold;">Estructura:</span></div>
+        <div style="text-align: center;"><img src="ideograma.html.resources/B5FBF541-2482-452F-979A-06B7DABFB9AF.png"
+            height="316" width="329" /><br /></div>
+        <hr />
+        <div><span style="font-size: 18px; font-weight: bold;">Ejemplos:</span></div>
+        <div>Figura 2 muestra una porción de la interfaz web de <a
+            href="http://vega.archive.ensembl.org/Homo_sapiens/Location/Chromosome?r=1"> Vega Genome Browser,</a> donde
+          se muestra el ideograma como mecanismo de posicionamiento y navegación. La Figura 3, muestra el ideograma
+          implementado en el <a href="http://www.genomemaps.org/">Genome Maps</a>.</div>
         <div><br /></div>
-        <div><br /></div>
-        <div><img src="ideograma.html.resources/22A72270-75D3-4DD5-9774-C870EF243679.png" height="427"
-            width="71" /><br /></div>
-        <div>Fig. Idiograma del cromosoma 1 [1].</div>
-        <div>Otros ejemplos pueden encontrarse en VEGA:<img src="ideograma.html.resources/VEGA.png" class="img-fluid" alt="Responsive image” /><br /></div>
+        <div><img src="ideograma.html.resources/VEGA.png" height="92" width="800" /><br /></div>
+        <div style="text-align: center; ">
+          <font style="font-size: 11px;">Fig. 2 VEGA Genome Browser.</font>
+        </div>
+        <div style="text-align: center; "><span style="font-size: 11px;"><img
+              src="ideograma.html.resources/9174A4A1-8918-463B-A99F-8895140B5994.png" class="img-fluid" alt="Responsive image”/></span><br /></div>
+        <div style="text-align: center; ">
+          <font style="font-size: 11px;">Fig. 3 Genome Maps</font>
+        </div>
         <hr />
         <div>
-          <font style="font-size: 18px;"><b>Bibliografía</b></font>
+          <font style="font-size: 18px;"><span style="font-size: 18px; font-weight: bold;">Bibliografía</span></font>
         </div>
         <div>[1] <span
             style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">Oliva,
@@ -262,9 +247,10 @@
             style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">.
             Vol. 39. Edicions Universitat Barcelona, 2013.</span></div>
         <div><a href="https://glosarios.servidor-alicante.com/biologia/idiograma"
-            style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">[2]</a><span
-            style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">
-            Glosario de la Alicante.</span></div>
+            style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">[2]</a>
+          <span
+            style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">Glosario
+            de la Alicante.</span></div>
 
         <!-- InstanceEndEditable -->
       </div>
@@ -286,4 +272,6 @@
 
 </body>
 
-<!-- InstanceEnd --></html>
+<!-- InstanceEnd -->
+
+</html>
