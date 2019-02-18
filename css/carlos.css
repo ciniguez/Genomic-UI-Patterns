@@ -9,11 +9,12 @@
 	padding-left:30px;
 	padding-top:30px;}
 .menu_carlos_interno{
+	font-size: 0.8em;
 	height: 100%;
     width: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;}
-a{
+.menu_carlos a, nav a{
 	color: #EEE;
 	}
 	.menu_carlos a:hover { 
@@ -23,6 +24,7 @@ a{
   		text-decoration:none;
 	}
 .menu_carlos h6{
+	font-size: 1.2em;
 	color: #FF9;
 	font-weight:bold;
 	}
