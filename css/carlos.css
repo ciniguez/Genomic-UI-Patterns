@@ -1,9 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*FF976C*/
+.logo1{ color:#FFCD2D;float: left; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';font-weight: bolder;}
 /* Colors */
-.naranja{background-color: #009}
-.azul{background-color:#1195FF}
+.color1{
+	background-color: #e9ecef;
+	-webkit-box-shadow: 3px 10px 50px -15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 10px 50px -15px rgba(0,0,0,0.75);
+	box-shadow: 3px 10px 50px -15px rgba(0,0,0,0.75);
+}
+.azul{background-color:#E0DEE3} /*1195FF*/
 /* Styles */
 .menu_carlos{
 	padding-left:30px;
@@ -12,20 +19,15 @@
 	font-size: 0.8em;
 	height: 100%;
     width: 100%;
+	padding-left:30px;
 	overflow-y: scroll;
 	overflow-x: hidden;}
-.menu_carlos a, nav a{
-	color: #EEE;
-	}
-	.menu_carlos a:hover { 
-  		color: #FFF;
-	}
-	.menu_carlos a:link { 
-  		text-decoration:none;
-	}
+a{color: #7E7D7F;}
+a:hover { color: #BF542D;}
+.menu_carlos a:link { text-decoration:none;}
 .menu_carlos h6{
 	font-size: 1.2em;
-	color: #FF9;
+	color: #BF542D;
 	font-weight:bold;
 	}
 .container-herencia1{

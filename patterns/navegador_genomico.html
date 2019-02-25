@@ -24,20 +24,20 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg naranja fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">Geno-UI Patterns </a>
+  <nav class="navbar navbar-expand-lg color1 fixed-top">
+    <a class="navbar-brand" href="../index.html"><img src="../img/logo1.svg" ></a>
+      <!--a class="navbar-brand" href="#"><span class="logo1">GenomUI</span><span class="espaciado">Patterns</span></a-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <!--li class="nav-item active">
-            <a class="nav-link" href="#">Home
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Home
               <span class="sr-only">(current)</span>
             </a>
-          </li-->
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About
               <span class="sr-only">(current)</span>
@@ -95,165 +95,7 @@
         <div class="container container-herencia1">
         <!-- InstanceBeginEditable name="contenido" -->
 
-                    <div><span style="font-size: 24px; font-family: Trebuchet MS;">Navegador Genómico</span>
-                    </div>
-                    <div><span style="font-size: 11px;"><br /></span></div>
-                    <div><img src="genoma_browser.html.resources/04E9EC29-6155-44FC-B8D1-A259A7411383.png" height="390"
-                            width="800" /><br /></div>
-                    <div style="text-align: center;"><a
-                            href="https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?context=genome&amp;acc=GCF_000001405.38"
-                            style="font-size: 11px;" target="_blank">Genome Data Viewer</a></div>
-                    <hr />
-                    <div><span style="font-size: 18px; font-weight: bold;">Problema:</span><span
-                            style="font-size: 18px;"> </span></div>
-                    <ul>
-                        <li>
-                            <div>¿Cómo construir un entorno gráfico e interactivo para navegar y explorar genomas
-                                completos?</div>
-                        </li>
-                    </ul>
-                    <hr />
-                    <div><span style="font-size: 18px; font-weight: bold;">Contexto:</span><span
-                            style="font-size: 18px;"> </span></div>
-                    <ul>
-                        <li>
-                            <div>El usuario necesita navegar y explorar cantidades masivas de información del genoma.
-                            </div>
-                        </li>
-                        <li>
-                            <div>Los usuarios necesitan enfocarse en una determinada región del genoma considerando la
-                                información contextual o anotada asociada a dicha región. </div>
-                        </li>
-                    </ul>
-                    <hr />
-                    <div><span style="font-size: 18px; font-weight: bold;">Fuerzas:</span><span
-                            style="font-size: 18px;"> </span></div>
-                    <ul>
-                        <li>
-                            <div>Cantidad pierde usuario</div>
-                        </li>
-                        <li>
-                            <div>La información de anotaciones asociadas a una secuencia genética son necesarias para
-                                enriquecer el análisis de la secuencia bajo estudio.</div>
-                        </li>
-                        <li>
-                            <div>Resumir de manera gráfica</div>
-                        </li>
-                    </ul>
-                    <hr />
-                    <div><span style="font-size: 18px; font-weight: bold;">Solución:</span></div>
-                    <div style="text-align: justify;">Desplegar la densa información del genoma dentro de una sola
-                        página. La pagina debe incorporar mecanismos de navegación y exploración sincronizados con un
-                        sistema gráfico paralelo y alineado de secuencias genéticas que permita no solo almacenar la
-                        secuencia bajo estudio sino también anotaciones que provean información contextual asociada. La
-                        página Navegador genómico debe considerar:</div>
-                    <ul>
-                        <li>
-                            <div style="text-align: justify;"><span style="font-weight: bold;">Visualización</span>.- La
-                                página debe mantener la relación contexto-detalle permitiendo al usuario enfocarse en
-                                detalles de la secuencia genética sin perder la visión general de la estructura del
-                                genoma. En este sentido, el patrón Cariograma puede ser utilizado para mantener la
-                                visualización del contexto (el conjunto de cromosomas de la especie bajo estudio) y el
-                                 patrón Ideograma pueden ser utilizado para desplegar el detalle de un cromosoma
-                                específico. Los patrones Cariograma e Ideograma facilitan la orientación a lo largo de
-                                la secuencia genética.</div>
-                        </li>
-                        <li>
-                            <div style="text-align: justify;"><span style="font-weight: bold;">Despliegue de
-                                    secuencias</span>.- Desplegar la secuencia genética bajo estudio de manera
-                                horizontal y permitir al usuario agregar paralelamente otras secuencias o anotaciones
-                                que brinden información contextual a la secuencia bajo estudio permitan su comparación.
-                                En este sentido, este patrón se apoya del sistema de pistas provisto por el patrón
-                                Pistas Comparativas permitiendo al usuario agregar varias pistas apiladas con
-                                información de anotaciones relevantes y asociadas a la secuencia bajo estudio. El
-                                sistema de pistas también facilitan la comparación entre diferentes secuencias
-                                alineadas.</div>
-                        </li>
-                        <li>
-                            <div style="text-align: justify;"><span style="font-weight: bold;">Navegación y
-                                    exploración.-</span> Facilitar la navegación y exploración por el genoma
-                                incorporando  controles de desplazamiento, alejamiento y acercamiento. En este sentido,
-                                el patrón Cariograma puede ser utilizado para facilitar la navegación por los cromosomas
-                                que componen el genoma y el patrón Ideograma junto con el patron Control Navegación
-                                pueden ser utilizados para facilitar el desplazamiento por la secuencia genómica y su
-                                visualización a diferentes escalas o niveles de detalle.</div>
-                        </li>
-                    </ul>
-                    <hr />
-                    <div><span style="font-size: 18px; font-weight: bold;">Estructura:</span></div>
-                    <div><span style="font-size: 18px;"><b><img
-                                    src="genoma_browser.html.resources/77399246-EEDA-42C2-86B4-D522079036FA.png"
-                                    height="349" width="662" /><br /></b></span></div>
-                    <hr />
-                    <div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Patrones
-                            relacionados:</span></div>
-                    <ul>
-                        <li>
-                            <div style="text-align: left;"><span style="font-style: italic;">Asociación</span>: ninguno
-                            </div>
-                        </li>
-                        <li>
-                            <div style="text-align: left;"><span
-                                    style="font-style: italic;">Agregación</span>: Cariograma, Ideograma, Control
-                                desplazamiento</div>
-                        </li>
-                        <li>
-                            <div style="text-align: left;"><span style="font-style: italic;">Especialización</span>:
-                                ninguno</div>
-                        </li>
-                    </ul>
-                    <hr />
-                    <div><span style="font-size: 18px; font-weight: bold;">Ejemplos:</span></div>
-                    <div style="text-align: justify; ">
-                        <font style="font-size: 14px;">La figura 1 presenta el patrón Navegador Genético implementado
-                            por el UCSC Genome Browser que muestra la secuencia genética de la especie Humana (GRCh38).
-                            El browser está formado por el Ideograma, el sistema de pistas comparativas y el Control e
-                            navegación. Sin embargo, el cariograma no está implementado. Cada texto en la primera
-                            columna se corresponde con cada una de las secuencias que han sido agregadas para proveer
-                            contexto a la secuencia genética. Además, existen varias pistas con el genoma de otras
-                            especies como el ratón, perro, gallina, etc, que están alineadas con el genoma del humano
-                            con el fin de realizar comparaciones en el material genético. </font>
-                    </div>
-                    <div style="text-align: center; "><span style="font-size: 18px;"><b><img
-                                    src="genoma_browser.html.resources/EE1745CF-B450-4B9F-B4CD-572DFEE9CAA3.png"
-                                    height="441" width="800" /><br /></b></span></div>
-                    <div style="text-align: center; ">
-                        <font style="font-size: 11px;">Fig. 1. <a target="_blank"
-                                href="https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&amp;lastVirtModeType=default&amp;lastVirtModeExtraState=&amp;virtModeType=default&amp;virtMode=0&amp;nonVirtPosition=&amp;position=chr1%3A11102837-11267747&amp;hgsid=231027208_zUGGr7xv7pACKO1rkQy2AQNb6PNO">UCSC
-                                Genome Browser</a></font>
-                    </div>
-                    <div>Se puede encontrar Navegadores Genéticos y Visores genéticos implementados en plataforma web y
-                        escritorio.</div>
-                    <div><span style="font-weight: bold;">Basados en web:</span></div>
-                    <ul>
-                        <li>
-                            <div><a href="http://vega.archive.ensembl.org/Homo_sapiens/Info/Index" target="_blank">Vega</a></div>
-                        </li>
-                        <li>
-                            <div><a href="https://www.ncbi.nlm.nih.gov/projects/sviewer/?id=NC_000001%0A" target="_blank">Sequence
-                                    Viewer</a>*</div>
-                        </li>
-                    </ul>
-                    <div>*  puede ser embebido en una aplicación web existente.</div>
-                    <div><span style="font-weight: bold;">Basados en escritorio:</span></div>
-                    <ul>
-                        <li>
-                            <div><a href="http://software.broadinstitute.org/software/igv/home" target="_blank">Integrative Genomics
-                                    Viewer</a> </div>
-                        </li>
-                        <li>
-                            <div><a href="https://www.snapgene.com/snapgene-viewer/" target="_blank">SnapGene Viewer</a> </div>
-                        </li>
-                    </ul>
-                    <div><br /></div>
-                    <div>
-                        <hr />
-                    </div>
-                    <div>
-                        <font style="font-size: 18px;"><span
-                                style="font-size: 18px; font-weight: bold;">Bibliografía</span></font>
-                    </div>
-                    <div><br /></div>
+                    <div><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;">Navegador Genómico</span></div><div><span style="font-size: 11px;"><br/></span></div><div><img src="genoma_browser.html.resources/04E9EC29-6155-44FC-B8D1-A259A7411383.png" height="390" width="800"/><br/></div><div style="text-align: center;"><a href="https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?context=genome&amp;acc=GCF_000001405.38" style="font-size: 11px;">Genome Data Viewer</a></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Problema:</span><span style="font-size: 18px;"> </span></div><ul><li><div>¿Cómo construir un entorno gráfico e interactivo para navegar y explorar genomas completos?</div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Contexto:</span><span style="font-size: 18px;"> </span></div><ul><li><div>El usuario necesita navegar y explorar cantidades masivas de información del genoma.</div></li><li><div>Los usuarios necesitan enfocarse en una determinada región del genoma considerando la información contextual o anotada asociada a dicha región. </div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Fuerzas:</span><span style="font-size: 18px;"> </span></div><ul><li><div>Cantidad pierde usuario</div></li><li><div>La información de anotaciones asociadas a una secuencia genética son necesarias para enriquecer el análisis de la secuencia bajo estudio.</div></li><li><div>Resumir de manera gráfica</div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Solución:</span></div><div style="text-align: justify;">Desplegar la densa información del genoma dentro de una sola página. La pagina debe incorporar mecanismos de navegación y exploración sincronizados con un sistema gráfico paralelo y alineado de secuencias genéticas que permita no solo almacenar la secuencia bajo estudio sino también anotaciones que provean información contextual asociada. La página Navegador genómico debe considerar:</div><ul><li><div style="text-align: justify;"><span style="font-weight: bold;">Visualización</span>.- La página debe mantener la relación contexto-detalle permitiendo al usuario enfocarse en detalles de la secuencia genética sin perder la visión general de la estructura del genoma. En este sentido, el patrón Cariograma puede ser utilizado para mantener la visualización del contexto (el conjunto de cromosomas de la especie bajo estudio) y el  patrón Ideograma pueden ser utilizado para desplegar el detalle de un cromosoma específico. Los patrones Cariograma e Ideograma facilitan la orientación a lo largo de la secuencia genética.</div></li><li><div style="text-align: justify;"><span style="font-weight: bold;">Despliegue de secuencias</span>.- Desplegar la secuencia genética bajo estudio de manera horizontal y permitir al usuario agregar paralelamente otras secuencias o anotaciones que brinden información contextual a la secuencia bajo estudio permitan su comparación. En este sentido, este patrón se apoya del sistema de pistas provisto por el patrón Pistas Comparativas permitiendo al usuario agregar varias pistas apiladas con información de anotaciones relevantes y asociadas a la secuencia bajo estudio. El sistema de pistas también facilitan la comparación entre diferentes secuencias alineadas.</div></li><li><div style="text-align: justify;"><span style="font-weight: bold;">Navegación y exploración.-</span> Facilitar la navegación y exploración por el genoma incorporando  controles de desplazamiento, alejamiento y acercamiento. En este sentido, el patrón Cariograma puede ser utilizado para facilitar la navegación por los cromosomas que componen el genoma y el patrón Ideograma junto con el patron Control Navegación pueden ser utilizados para facilitar el desplazamiento por la secuencia genómica y su visualización a diferentes escalas o niveles de detalle.</div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Estructura:</span></div><div><span style="font-size: 18px;"><b><img src="genoma_browser.html.resources/77399246-EEDA-42C2-86B4-D522079036FA.png" height="349" width="662"/><br/></b></span></div><hr/><div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Patrones relacionados:</span></div><ul><li><div style="text-align: left;"><span style="font-style: italic;">Asociación</span>: ninguno</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Agregación</span>: Cariograma, Ideograma, Control desplazamiento</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Especialización</span>: ninguno</div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Ejemplos:</span></div><div style="text-align: justify; "><span style="font-size: 14px;">La figura 1 presenta el patrón Navegador Genético implementado por el UCSC Genome Browser que muestra la secuencia genética de la especie Humana (GRCh38). El browser está formado por el Ideograma, el sistema de pistas comparativas y el Control e navegación. Sin embargo, el cariograma no está implementado. Cada texto en la primera columna se corresponde con cada una de las secuencias que han sido agregadas para proveer contexto a la secuencia genética. Además, existen varias pistas con el genoma de otras especies como el ratón, perro, gallina, etc, que están alineadas con el genoma del humano con el fin de realizar comparaciones en el material genético. </span></div><div style="text-align: center; "><span style="font-size: 18px;"><b><img src="genoma_browser.html.resources/EE1745CF-B450-4B9F-B4CD-572DFEE9CAA3.png" height="441" width="800"/><br/></b></span></div><div style="text-align: center; "><span style="font-size: 11px;">Fig. 1. </span><a href="https://genome-euro.ucsc.edu/cgi-bin/hgTracks?db=hg38&amp;lastVirtModeType=default&amp;lastVirtModeExtraState=&amp;virtModeType=default&amp;virtMode=0&amp;nonVirtPosition=&amp;position=chr1%3A11102837-11267747&amp;hgsid=231027208_zUGGr7xv7pACKO1rkQy2AQNb6PNO" style="font-size: 11px;">UCSC Genome Browser</a></div><div>Se puede encontrar Navegadores Genéticos y Visores genéticos implementados en plataforma web y escritorio.</div><div><span style="font-weight: bold;">Basados en web:</span></div><ul><li><div><a href="http://vega.archive.ensembl.org/Homo_sapiens/Info/Index">Vega</a></div></li><li><div><a href="https://www.ncbi.nlm.nih.gov/projects/sviewer/?id=NC_000001%0A">Sequence Viewer</a>*</div></li><li><div><a href="http://gmod.org/wiki/GBrowse">GBrowse</a></div></li><li><div><a href="http://www.h-invitational.jp/g-compass/">G-compass</a></div></li><li><div><a href="https://jbrowse.org/">JBrowse</a></div></li><li><div><a href="https://omictools.com/lookseq-tool">LookSeq</a></div></li><li><div><a href="http://utgenome.org/">UTGB</a></div></li><li><div><a href="https://www.ensembl.org/">Ensembl Gente Browser</a></div></li><li><div><a href="https://xena.ucsc.edu/welcome-to-ucsc-xena/">UCSC Xena</a></div></li></ul><div>*  puede ser embebido en una aplicación web existente.</div><div><span style="font-weight: bold;">Basados en escritorio:</span></div><ul><li><div><a href="http://software.broadinstitute.org/software/igv/home">Integrative Genomics Viewer</a> </div></li><li><div><a href="https://www.snapgene.com/snapgene-viewer/">SnapGene Viewer</a> </div></li></ul><div><br/></div><div><br/></div>
 
                     <!-- InstanceEndEditable -->
         </div>
