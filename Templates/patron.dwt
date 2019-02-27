@@ -33,17 +33,17 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home
+            <a class="nav-link" href="index.html">Inicio
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About
+            <a class="nav-link" href="#">Acerca de
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Contactos</a>
           </li>
         </ul>
       </div>
@@ -58,9 +58,9 @@
         <div class="menu_carlos_interno">
           <h6>Genericos</h6>
        <ul>
-                  <li><a href="filtro_dinamico.html">Visualizar-conectar-filtrar</a></li>
+                  <!--li><a href="filtro_dinamico.html">Visualizar-conectar-filtrar</a></li>
                   <li><a href="distribucion_alelica.html">Recomendación Interaccion</a></li>
-                  <li><a href="comparar_secuencias.html">Entrega continua</a></li>
+                  <li><a href="comparar_secuencias.html">Entrega continua</a></li-->
                 </ul>
         <h6>Filtro</h6>
         <ul>
@@ -70,20 +70,21 @@
         </ul>
         <h6>Visualizar</h6>
         <ul>
-                  <!--li><a href="filtro_dinamico.html">Muchas columnas</a></li-->
-                  <li><a href="patterns/navegador_genomico.html">Navegador Genómico</a></li>
-                  <li><a href="patterns/cariograma.html">Cariograma</a></li>
+                  
                   <li><a href="patterns/ideograma.html">Ideograma</a></li>
+                  <li><a href="patterns/cariograma.html">Cariograma</a></li>
                   <li><a href="patterns/pistas_comparativas.html">Pistas comparativas</a></li>
+                  <li><a href="patterns/navegador_genomico.html">Navegador Genómico</a></li>
+                  <li><a href="patterns/mashup_interface.html">Mashup interface</a></li>
                   <!--li><a href="comparar_secuencias.html">Micro consultas</a></li>
                   <li><a href="comparar_secuencias.html">Zoom semántico</a></li-->
                 </ul>
          <h6>Acciones</h6>
          <ul>
-                  <li><a href="escrutinio.html">Escrutinio</a></li>
+                  <!--li><a href="escrutinio.html">Escrutinio</a></li>
                   <li><a href="filtromovible.html">Filtro movible</a></li>
                   <li><a href="anotarprocedimiento.html">Anotar procedimiento</a></li>
-                  <li><a href="reusarsecuenciacomandos.html">Reusar secuencia comandos</a></li>
+                  <li><a href="reusarsecuenciacomandos.html">Reusar secuencia comandos</a></li-->
          </ul>
       
          </div>
