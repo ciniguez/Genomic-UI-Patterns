@@ -10,6 +10,15 @@
 	-moz-box-shadow: 3px 10px 50px -15px rgba(0,0,0,0.75);
 	box-shadow: 3px 10px 50px -15px rgba(0,0,0,0.75);
 }
+.navbar{
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 0rem;
+	}
+.ci-footer{
+	background-color: #000000;
+	font-size:0.8em;
+	}
 .azul{background-color:#E0DEE3} /*1195FF*/
 /* Styles */
 .menu_carlos{
