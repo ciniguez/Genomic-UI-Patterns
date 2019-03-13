@@ -1,3 +1,3 @@
-# UserInterfacesResearch
-Investigación sobre los contextos de interacción en ambientes colaborativos para el diagnóstico genético de enfermedades
+# User Interfaces Patterns for Exploiting Genomic Data
+Patrones de Interacción para la explotación de datos genómicos.
 
