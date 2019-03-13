@@ -82,8 +82,6 @@
           </ul>
           <h6>Acciones</h6>
           <ul>
-          	<li><a href="cargar_datos.html">Cargar Datos</a></li>
-            <li><a href="sustraccion_datasets.html">Sustracción</a></li>
             <!--li><a href="escrutinio.html">Escrutinio</a></li>
                   <li><a href="filtromovible.html">Filtro movible</a></li>
                   <li><a href="anotarprocedimiento.html">Anotar procedimiento</a></li>
@@ -96,9 +94,48 @@
       <div class="col-lg-9 col-md-8 mb-6">
         <!-- Contenido -->
         <div class="container container-herencia1">
-          <!-- TemplateBeginEditable name="contenido" -->
-          
-<!-- TemplateEndEditable -->
+          <h1>
+          <!-- TemplateBeginEditable name="nombrePatron" -->
+          Ideograma
+          <!-- TemplateEndEditable -->
+          </h1>
+          <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openPatternPart('intro')">Intro</button>
+            <button class="w3-bar-item w3-button" onclick="openPatternPart('problema')">Problema</button>
+            <button class="w3-bar-item w3-button" onclick="openPatternPart('solucion')">Solución</button>
+            <button class="w3-bar-item w3-button" onclick="openPatternPart('ejemplos')">Ejemplos</button>
+          </div>
+
+          <!-- Jumbotron Header -->
+
+
+          <div id="intro" class="w3-container parte">
+            <h2>Resumen</h2>
+            <!-- TemplateBeginEditable name="intro" -->
+            <p>London is the capital city of England.</p>
+            <!-- TemplateEndEditable -->
+          </div>
+
+          <div id="problema" class="w3-container parte" style="display:none">
+            <h2>Problema</h2>
+            <!-- TemplateBeginEditable name="contenido" -->
+            <p>London is the capital city of England.</p>
+            <!-- TemplateEndEditable -->
+          </div>
+
+          <div id="solucion" class="w3-container parte" style="display:none">
+            <h2>Solución</h2>
+            <!-- TemplateBeginEditable name="solucion" -->
+            <p>London is the capital city of England.</p>
+            <!-- TemplateEndEditable -->
+          </div>
+          <div id="ejemplos" class="w3-container parte" style="display:none">
+            <h2>Ejemplos</h2>
+            <!-- TemplateBeginEditable name="ejemplo" -->
+            <p>London is the capital city of England.</p>
+            <!-- TemplateEndEditable -->
+          </div>
+
         </div>
       </div>
     </div>
@@ -116,6 +153,18 @@
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function openPatternPart(partName) {
+      var i;
+      console.log(document.getElementById("problema"));
+      var x = document.getElementsByClassName('parte');
+      console.log(x);
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(partName).style.display = "block";
+    }
+  </script>
 
 </body>
 

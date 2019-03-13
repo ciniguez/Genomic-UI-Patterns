@@ -3,6 +3,7 @@
 
 /*FF976C*/
 .logo1{ color:#FFCD2D;float: left; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';font-weight: bolder;}
+.ci_centro{ text-align:center;}
 /* Colors */
 .color1{
 	background-color: #e9ecef;
@@ -44,3 +45,16 @@ a:hover { color: #BF542D;}
 	padding-left:100px;
 	padding-right:100px;
 }
+.parte{ padding-top:10px;}
+.container-herencia1 h1{ margin-top:10px;}
+/* TABS */
+.w3-container p{text-align:justify;}
+.w3-bar{width:100%;overflow:hidden;}
+.w3-center .w3-bar{display:inline-block;width:auto}
+/*.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important;}*/
+.w3-black {color:#fff!important;background-color:#000!important;}
+.w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;}
+.w3-button:hover{background-color:#CCC; color:#000;}
+.w3-button:disabled:hover{box-shadow:none}
+.w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.w3-bar .w3-button{white-space:normal}

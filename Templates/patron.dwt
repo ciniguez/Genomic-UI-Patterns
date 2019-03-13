@@ -81,6 +81,8 @@
                 </ul>
          <h6>Acciones</h6>
          <ul>
+         	<li><a href="patterns/cargar_datos.html">Cargar Datos</a></li>
+            <li><a href="patterns/sustraccion_datasets.html">Sustracción</a></li>
                   <!--li><a href="escrutinio.html">Escrutinio</a></li>
                   <li><a href="filtromovible.html">Filtro movible</a></li>
                   <li><a href="anotarprocedimiento.html">Anotar procedimiento</a></li>
