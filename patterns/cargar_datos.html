@@ -49,11 +49,13 @@
   </nav>
 
   <!-- Page Content -->
-  <div>
+  <div class="container-fluid">
     <div class="row text-left">
-      <div class="col-lg-3 col-md-4 mb-6 menu_carlos azul">
-        <!-- menu-->
+      <!-- menu-->
+      <div class="col-lg-3 col-md-4 mb-6 menu_carlos_interno postition-fixed border">
+        <div class="py-2 sticky-top flex-grow-1">
         <div class="menu_carlos_interno">
+        <div class="menu_carlos">
           <h6>Genericos</h6>
           <ul>
             <!--li><a href="filtro_dinamico.html">Visualizar-conectar-filtrar</a></li>
@@ -86,12 +88,12 @@
                   <li><a href="anotarprocedimiento.html">Anotar procedimiento</a></li>
                   <li><a href="reusarsecuenciacomandos.html">Reusar secuencia comandos</a></li-->
           </ul>
-
+          </div>
         </div>
-        <!--fin menu-->
       </div>
-      <div class="col-lg-9 col-md-8 mb-6">
-        <!-- Contenido -->
+      <!--fin menu-->
+      <!-- Contenido -->
+      <div class="col-lg-9 col-md-8 mb-6 col offset-3">
         <div class="container container-herencia1">
           <!-- InstanceBeginEditable name="contenido" -->
           <div><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;">Cargar datos</span></div><div><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;"><br/></span></div><div><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;"><img src="cargar_datos.html.resources/portada.png" height="443" width="600"/><br/></span></div><div style="text-align: center;"><span style="font-size: 11px;">Fig. 1 Formulario de carga de datos de Bier.app [1].</span></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Problema</span></div><ul><li><div><span style="font-size: 14px;">Cargar conjunto de datos disponible en fichero local </span><span style="font-size: 14px;">de diferentes fuentes y formatos.</span></div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Contexto</span></div><ul><li><div style="text-align: justify;"><span style="font-size: 14px;">Un primer paso en el análisis genómico es cargar el conjunto de datos genéticos que se quiere analizar y el conjunto de datos de soporte para el análisis (p. ej., una secuencia de referencia). Los datos pueden estar </span><span style="font-size: 14px;">disponibles en ficheros estructurados en diferentes formatos (p. ej., BAM, VCF) y provenir de varias fuentes. El usuario quiere cargar el conjunto de datos al sistema de análisis genómico para poder procesarlos y analizarlos.</span></div></li><li><div style="text-align: justify;"><span style="font-size: 14px;">En los diagnósticos moleculares, por ejemplo, los investigadores analizan la información de variaciones genéticas de un individuo contenida en ficheros de texto. Estos ficheros deben ser cargados al sistema de gestión de datos genéticos para ser procesados y analizados.</span></div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Solución</span></div><div style="text-align: justify;"/><ul style="text-align: justify;"/><div style="text-align: justify;"><span style="font-size: 14px;">Proveer un formulario de carga de datos donde el usuario sea capaz de especificar uno o varios conjuntos de datos provenientes de varias fuentes (p.ej., recurso en línea, fichero de texto, contenido de un fichero) y disponibles en varios formatos.</span></div><div style="text-align: justify;"><span style="font-size: 14px;">El formulario debe incluir al menos las siguientes entradas de datos:</span></div><ul><li><div style="text-align: justify;"><span style="font-size: 14px;">Nombre.- Nombre del fichero a cargar.</span></div></li><li><div style="text-align: justify;"><span style="font-size: 14px;">Tipo.- Formato del fichero que puede tomar varios valores  </span><span style="font-size: 14px;">(p.ej., VCF, json, fasta, fastaq. dbsnf.tabular, gff3).</span></div></li><li><div style="text-align: justify;">Contenido.- Los datos que se desea analizar. Permitir seleccionar conjuntos de datos dependiendo de su: tamaño (megabytes, gigantes  terabytes, etc), accesibilidad (acceso local o remoto), cantidad (número de conjuntos de datos). <span style="font-size: 14px;">Si el conjunto de datos se encuentran en uno o varios ficheros locales, el usuario debe poder seleccionarlos navegando por el repositorio local. </span><span style="font-size: 14px;">Si el conjuntos de datos se encuentran disponible en la web, el usuario debe poder indicar la URL del recurso.</span></div></li></ul><div style="text-align: justify;"><span style="font-size: 14px;">Las acciones disponibles y visibles para procesar la carga de datos incluyen: iniciar carga, pausar, parar, pegar (URL o datos). El procesamiento de los datos debe comunicar al usuario el </span><span style="font-size: 14px;">avance en la lectura y carga del contenido. Esta comunicación incluye, pero no está limitada a, mensajes de error, alertas e información de procesamiento (p. ej. número de líneas procesadas).</span></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Estructura</span></div><div style="text-align: center;"><br/></div><hr style="text-align: center;"/><div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Patrones relacionados</span></div><ul style="text-align: center;"><li><div style="text-align: left;"><span style="font-style: italic;">Asociación</span>: ninguna</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Agregación</span>: ninguna</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Especialización</span>: ninguno</div></li></ul><div style="text-align: center;"><br/></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Ejemplos</span></div><div style="text-align: justify; "><font style="font-size: 14px;">El formulario de la Figura 2 muestra el formulario de carga de datos provenientes de un fichero local o de un recurso remoto (en la web). El formulario permite arrastrar y soltar los ficheros que contienen el o los conjuntos de datos que se desea analizar. En la parte inferior el usuario puede indicar el tipo de fichero a cargar (“Type”) y como caso adicional, la especie u organismo al que pertenece el conjunto de datos a cargar. Los comandos de acción del formulario incluyen la opción para cargar un fichero local, copiar y pegar el contenido de un fichero de datos genómico y las opciones para el procesamiento: Pausar, Restablecer, Iniciar/Parar y cerrar formulario.</font></div><div style="text-align: center;"><span style="font-size: 18px;"><img src="cargar_datos.html.resources/ejemplo1.png" height="478" width="784"/><br/></span></div><div style="text-align: center;"><span style="font-size: 11px;">Fig. 2 Formulario de carga de datos de la aplicación Galaxy [1]</span></div><div style="text-align: center;"><br/></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Bibliografía</span></div><div><a href="http://www.babelomics.org/">[1]</a> Bier.app</div><div><a href="https://usegalaxy.org/">[2]</a> Galaxy</div><div><br/></div>
@@ -100,7 +102,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Termina Contenido --------------------->
     <!-- Footer -->
     <footer class="py-2 ci-footer fixed-bottom">
       <div class="container">

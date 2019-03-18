@@ -49,11 +49,13 @@
   </nav>
 
   <!-- Page Content -->
-  <div>
+  <div class="container-fluid">
     <div class="row text-left">
-      <div class="col-lg-3 col-md-4 mb-6 menu_carlos azul">
-        <!-- menu-->
+      <!-- menu-->
+      <div class="col-lg-3 col-md-4 mb-6 menu_carlos_interno postition-fixed border">
+        <div class="py-2 sticky-top flex-grow-1">
         <div class="menu_carlos_interno">
+        <div class="menu_carlos">
           <h6>Genericos</h6>
           <ul>
             <!--li><a href="filtro_dinamico.html">Visualizar-conectar-filtrar</a></li>
@@ -86,12 +88,12 @@
                   <li><a href="anotarprocedimiento.html">Anotar procedimiento</a></li>
                   <li><a href="reusarsecuenciacomandos.html">Reusar secuencia comandos</a></li-->
           </ul>
-
+          </div>
         </div>
-        <!--fin menu-->
       </div>
-      <div class="col-lg-9 col-md-8 mb-6">
-        <!-- Contenido -->
+      <!--fin menu-->
+      <!-- Contenido -->
+      <div class="col-lg-9 col-md-8 mb-6 col offset-3">
         <div class="container container-herencia1">
           <!-- TemplateBeginEditable name="contenido" -->
           
@@ -99,7 +101,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Termina Contenido --------------------->
     <!-- Footer -->
     <footer class="py-2 ci-footer fixed-bottom">
       <div class="container">
