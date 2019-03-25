@@ -1,0 +1,13 @@
+$(function () {
+
+    inicializar();
+
+   
+    function inicializar(){
+     
+        
+
+       
+    }
+
+});

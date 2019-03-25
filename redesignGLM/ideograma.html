@@ -1,0 +1,99 @@
+!
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--link rel="stylesheet" type="text/css" media="screen" href="main.css"-->
+    <!--script src="main.js"></script-->
+    <script src="https://unpkg.com/ideogram@1.6.0/dist/js/ideogram.min.js"></script>
+
+    <script src="assets/js/librerias_ideograma/Chart.min.js"></script>
+    <link rel="stylesheet" href="assets/js/librerias_ideograma/Chart.min.css">
+</head>
+
+<body>
+    <div class="filters">
+        <section>
+            <h4>Clinical importance</h4>
+            <select>
+                <option value="volvo">Increased risk</option>
+                <option value="saab">Increased Risk, Decreased risk</option>
+                <option value="mercedes">Risk</option>
+                <option value="audi">Higher risk</option>
+                <option value="audi">Protective</option>
+                <option value="audi">Risk factor</option>
+                <option value="audi">drug response</option>
+            </select>
+        </section>
+        <section>
+            <h4>Clinical importance</h4>
+            <select>
+                <option value="volvo">Increased risk</option>
+                <option value="saab">Increased Risk, Decreased risk</option>
+                <option value="mercedes">Risk</option>
+                <option value="audi">Higher risk</option>
+                <option value="audi">Protective</option>
+                <option value="audi">Risk factor</option>
+                <option value="audi">drug response</option>
+            </select>
+        </section>
+        <input type="checkbox" name="chkSNP" value="1"> Is SNP<br>
+        <section>
+            <h4>Specialization type</h4>
+            <select>
+                <option value="volvo">Indel</option>
+            </select>
+        </section>
+    </div>
+    <canvas id="densityChart" width="600" height="200"></canvas>
+    <script>
+
+        var densityCanvas = document.getElementById("densityChart");
+
+        Chart.defaults.global.defaultFontFamily = "Lato";
+        Chart.defaults.global.defaultFontSize = 18;
+
+        var densityData = {
+            label: 'Number of Variations by Chromosome',
+            data: [6, 9, 6, 5, 2, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        };
+
+        var barChart = new Chart(densityCanvas, {
+            type: 'horizontalBar',
+            data: {
+                labels: ["chr 1", "chr 2", "chr 3", "chr 4", "chr 5", "chr 6", "chr 7", "chr 8", "chr 9", "chr 10", "chr 11", "chr 12", "chr 13", "chr 14", "chr 15", "chr 16", "chr 17", "chr 18", "chr 19", "chr 20", "chr 21", "chr 22", "chr X", "chr Y"],
+                datasets: [densityData]
+            }
+        });
+        document.getElementById("densityChart").addEventListener("click", function (evt) {
+            var activePoints = barChart.getElementAtEvent(evt);
+            if(activePoints){
+                var label = barChart.data.labels[activePoints[0]._index];
+            }
+        });
+
+        // IDEOGRAMA
+
+        var config = {
+            organism: 'human',
+            chromosome: '17',
+            chrHeight: 600,
+            orientation: 'horizontal',
+            annotations: [{
+                name: 'BRCA1',
+                chr: '17',
+                start: 43044294,
+                stop: 43125482
+            }]
+        };
+        var ideogram = new Ideogram(config);
+
+    </script>
+
+</body>
+
+</html>
