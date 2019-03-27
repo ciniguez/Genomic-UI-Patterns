@@ -23,6 +23,11 @@
 	<link href="assets/css/pages.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/menu.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
+	<!-- DASHBOARD -->
+	<link rel="stylesheet" type="text/css" media="screen" href="dashboard/dashboard.css">
+	<link rel="stylesheet" href="dashboard/librerias_dashboard/Chart.min.css">
+
+
 
 	<script src="assets/js/modernizr.min.js"></script>
 
@@ -304,7 +309,58 @@
 
 							<div class="tab-content" id="myTabContent">
 								<div class="tab-pane fade show active" id="dashboard" role="tabpanel"
-									aria-labelledby="dashboard-tab">DASHBOARD</div>
+									aria-labelledby="dashboard-tab">
+									<div id="dashboard-component" class="container">
+										<div class="row border p-4">
+											<div class="col-xl-4">
+												<section>
+													<h6>Clinical importance</h4>
+														<select>
+															<option value="volvo">Increased risk</option>
+															<option value="saab">Increased Risk, Decreased risk</option>
+															<option value="mercedes">Risk</option>
+															<option value="audi">Higher risk</option>
+															<option value="audi">Protective</option>
+															<option value="audi">Risk factor</option>
+															<option value="audi">drug response</option>
+														</select>
+												</section>
+											</div>
+											<div class="col-xl-4">
+												<section>
+													<h6>Filter by SNP</h4>
+														<input type="checkbox" name="chkSNP" value="1"> Is SNP
+												</section>
+											</div>
+											<div class="col-xl-4">
+												<section>
+													<h6>Specialization type</h4>
+														<select>
+															<option value="volvo">Indel</option>
+														</select>
+												</section>
+											</div>
+										</div>
+										<div class="col-xl-12" style="height: 10px;">
+										</div>
+										<div class="row">
+											<div class="col-xl-12">
+												<p class="text-center text-white bg-info">Click one bar to show the
+													variations in the correspondant
+													chromosme.</p>
+												<canvas id="densityChart" width="undefined" height="undefined"></canvas>
+											</div>
+											<div class="col-xl-12">
+												<p id="tituloCromosoma" class="text-center"></p>
+											</div>
+											<div class="col-xl-12">
+												<div class="container-ideogram">
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 								<div class="tab-pane fade" id="variations" role="tabpanel"
 									aria-labelledby="variations-tab">
 
@@ -353,16 +409,19 @@
 
 									<ul class="nav nav-tabs" id="myTab_Variaciones" role="tablist">
 										<li class="nav-item">
-											<a class="nav-link active" id="propiedades-tab" href="#propiedades" data-toggle="tab"
-												role="tab" aria-controls="propiedades" aria-selected="true">Properties</a>
+											<a class="nav-link active" id="propiedades-tab" href="#propiedades"
+												data-toggle="tab" role="tab" aria-controls="propiedades"
+												aria-selected="true">Properties</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" id="pathways-tab" href="#pathways" data-toggle="tab"
-												role="tab" aria-controls="pathways" aria-selected="false">Pathways Related</a>
+												role="tab" aria-controls="pathways" aria-selected="false">Pathways
+												Related</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" id="bibliografia-tab" href="#bibliografia" data-toggle="tab"
-												role="tab" aria-controls="bibliografia" aria-selected="false">Bibliography Related</a>
+											<a class="nav-link" id="bibliografia-tab" href="#bibliografia"
+												data-toggle="tab" role="tab" aria-controls="bibliografia"
+												aria-selected="false">Bibliography Related</a>
 										</li>
 									</ul>
 									<div class="tab-content" id="myTabContent_Variaciones">
@@ -377,8 +436,12 @@
 
 									<!-- Termina Tabs Variacion-->
 								</div>
+								<!-- BROWSER GENOMICO -->
 								<div class="tab-pane fade" id="genomeviewer" role="tabpanel"
-									aria-labelledby="genomeviewer-tab">GENOMEVIEWER</div>
+									aria-labelledby="genomeviewer-tab">
+									<div id="igv-div"></div>
+
+								</div>
 							</div>
 
 							<!-- TERMINA TABULADOR -->
@@ -686,6 +749,15 @@
 
 	<!-- Page js  -->
 	<script src="assets/js/controller/ctrl_enfermedad.js"></script>
+
+	<!-- IGV js-->
+	<script src="https://cdn.jsdelivr.net/npm/igv@2.2.5/dist/igv.min.js"></script>
+	<script src="IGV/igv_controller.js"></script>
+
+	<!-- DASHBOARD js-->
+	<script src="dashboard/librerias_dashboard/ideogram.min.js"></script>
+	<script src="dashboard/librerias_dashboard/Chart.min.js"></script>
+	<script src="dashboard/dashboard_controller.js"></script>
 
 	<!-- Custom main Js -->
 	<script src="assets/js/jquery.core.js"></script>
