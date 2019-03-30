@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<patrones xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<patron alias="ejemplo">
+		<codigo>010</codigo>
+		<nombre>Cargar datos</nombre>
+		<alias>Ninguno</alias>
+		<nivel-significancia>***</nivel-significancia>
+		<portada>cargar_datos/portada.png</portada>
+		<problema>Cargar conjunto de datos disponible en fichero local de diferentes fuentes y formatos.</problema>
+		<contexto>
+		</contexto>
+		<solucion><![CDATA[]]></solucion>
+		<esquema>cariograma/esquema.png</esquema>
+		<relacionados>
+			<asociacion>ninguno</asociacion>
+			<agregaciona>navegador genómico</agregaciona>
+			<especializacion>ninguno</especializacion>
+		</relacionados>
+		<ejemplos>
+			<ejemplo>
+				<explicacion>
+				</explicacion>
+				<imagen>cariograma/ejemplo1.png</imagen>
+				<leyenda>fig 1. Cardiograma con Ideograma de Genome Maps</leyenda>
+			</ejemplo>
+			<ejemplo>
+				<explicacion>
+				</explicacion>
+				<imagen>cariograma/ejemplo2.png</imagen>
+				<leyenda>Fig 2. Cariograma de aplicación G-compass</leyenda>
+			</ejemplo>
+		</ejemplos>
+	</patron>
+</patrones>

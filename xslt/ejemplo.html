@@ -1,0 +1,180 @@
+<html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomUI - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo1.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+									Inicio
+									<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+									Acerca de
+									<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 pt-2 postition-fixed border">
+                    <div class="py-2 sticky-top flex-grow-1">
+                        <div class="menu_carlos">
+                            <h6>Genericos</h6>
+                            <ul></ul>
+                            <h6>Filtro</h6>
+                            <ul></ul>
+                            <h6>Visualizar</h6>
+                            <ul>
+                                <li>
+                                    <a href="ideograma.html">Ideograma</a>
+                                </li>
+                                <li>
+                                    <a href="cariograma.html">Cariograma</a>
+                                </li>
+                                <li>
+                                    <a href="pistas_comparativas.html">Pistas comparativas</a>
+                                </li>
+                                <li>
+                                    <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                                </li>
+                                <li>
+                                    <a href="mashup_interface.html">Mashup interface</a>
+                                </li>
+                                <li>
+                                    <a href="muchas_columnas_en_tabla.html">Columnas ocultas</a>
+                                </li>
+                            </ul>
+                            <h6>Acciones</h6>
+                            <ul>
+                                <li>
+                                    <a href="cargar_datos.html">Cargar Datos</a>
+                                </li>
+                                <li>
+                                    <a href="sustraccion_datasets.html">Sustracci&oacute;n</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6 pt-3">
+                    <div class="container">
+                        <h1>Cariograma</h1>
+                        <p>
+			Alias:
+			Ninguno</p>
+                        <p>
+			Nivel significancia:
+			***</p>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#intro" role="tab" aria-controls="intro" aria-selected="true">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#problema" role="tab" aria-controls="problema" aria-selected="false">Problema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+                                <p class="text-center font-weight-bold">¿Cómo representar el conjunto de cromosomas de una especie?
+		</p>
+                                <div class="text-center">
+                                    <img class="img-thumbnail img-fluid" src="cariograma/portada.png">
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="problema" role="tabpanel" aria-labelledby="problema-tab">
+                                <div class="container">
+                                    <h2>Problema</h2>
+                                    <p>¿Cómo representar el conjunto de cromosomas de una especie?
+		</p>
+                                    <h2>Contexto</h2>
+                                    <p>A partir de los datos de la secuencia genética del ADN de una especie, el investigador quiere identificar visualmente la organización cromosómica. En estudios citogenéticos, los
+			especialistas del dominio están familiarizados con el uso de cariotipos para identificar anomalías cromosómicas como causa de malformaciones o de enfermedad.
+		</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container">
+                                    <h2>Soluci&oacute;n</h2>
+                                    <p class="text-justify">
+Presentar un mapa citogenético o cariograma de una especie seleccionada. El cariograma es la representación gráfica del cariotipo. Para lo cual:
+<ul>
+<li>Agrega un componente visual (panel) a la unidad de interacción, el cual representará el cariograma.</li>
+<li>Definir el tamaño (ancho y largo) del contenedor y su orientación. La orientación define si el cariograma se presenta de manera horizontal o vertical. El tamaño del contenedor define la escala de dibujo.</li>
+<li>Por cada cromosoma de la especie seleccionada, dibuja el cromosoma en el contenedor considerando un factor de escala para escalar el tamaño de su secuencia de ADN (número de bases de la secuencia) al tamaño del contenedor.</li>
+<li>Ordenar los cromosomas ascendentemente por su número, dejando los cromosomas XY, si se incluyen, al final del conjunto de cromosomas.</li>
+</ul>
+
+
+
+Opcionalmente, si los datos del cromosoma definen el centrómero, brazo largo (q) y corto (p) entonces:
+<ol>
+<li> Dibujar los cromosomas con el brazo corto (“p”) hacia arriba y el brazo largo ("q") hacia abajo.</li>
+<li> La forma (morfología) del cromosoma respecto a su centrómero puede categorizarlo en cromosoma de tipo; metacéntricos, submetacéntrico, acrocéntrico o telocéntrico.</li>
+<li> tamaño (desde los más grandes hasta  a las más pequeños, en relación al número de bases de su secuencia de ADN).</li>
+</ol>
+El patrón Ideograma aplicado a este patrón, permite reconocer los cromosomas dentro del conjunto. Este patrón, junto con los tracks se convierte en un mecanismo “detalle bajo demanda"  que facilita la navegación por la secuencia genética.
+
+   </p>
+                                    <h2>Esquema</h2>
+                                    <div class="text-center">
+                                        <img src="cariograma/esquema.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container">
+                                    <p>La figura 1 muestra una porci&oacute;n de la interfaz de usuario de Genome Maps, donde se muestra la implementaci&oacute;n del patr&oacute;n cariograma (recuadro en color rojo). El cariograma, dispuesto
+					horizontalmente y en una sola fila, representa los 23 pares de cromosomas de la especie humana: 22 pares de cromosomas autonomas y un par de cromosomas gonosomas ( X y o Y, siendo XX para el sexo
+					femenino, y XY para el sexo masculino).
+				</p>
+                                    <div class="text-center">
+                                        <img class="img-fluid" src="cariograma/ejemplo1.png">
+                                    </div>
+                                    <p class="text-center">fig 1. Cardiograma con Ideograma de Genome Maps</p>
+                                    <p>La figura 2 muestra la implementaci&oacute;n del patr&oacute;n cariograma, est&aacute; vez para comparar regiones conservadas entre especies. En la ilustraci&oacute;n se presenta una porci&oacute;n de la interfaz de la
+					aplicaci&oacute;n G-compass que usa del patr&oacute;n cariograma para visualizar las regiones comosom&oacute;micas conservadas entre la especie humana y el rat&oacute;n.
+				</p>
+                                    <div class="text-center">
+                                        <img class="img-fluid" src="cariograma/ejemplo2.png">
+                                    </div>
+                                    <p class="text-center">Fig 2. Cariograma de aplicaci&oacute;n G-compass</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright
+								GenomUI Patterns @2018
+							</p>
+                </div>
+            </footer>
+        </div>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
