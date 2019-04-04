@@ -1,0 +1,162 @@
+<html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomUI - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo1.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+									Inicio
+									<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+									Acerca de
+									<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 pt-2 postition-fixed border">
+                    <div class="py-2 sticky-top flex-grow-1">
+                        <div class="menu_carlos">
+                            <h6>Genericos</h6>
+                            <ul></ul>
+                            <h6>Filtro</h6>
+                            <ul></ul>
+                            <h6>Visualizar</h6>
+                            <ul>
+                                <li>
+                                    <a href="ideograma.html">Ideograma</a>
+                                </li>
+                                <li>
+                                    <a href="cariograma.html">Cariograma</a>
+                                </li>
+                                <li>
+                                    <a href="pistas_comparativas.html">Pistas comparativas</a>
+                                </li>
+                                <li>
+                                    <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                                </li>
+                                <li>
+                                    <a href="mashup_interface.html">Mashup interface</a>
+                                </li>
+                                <li>
+                                    <a href="muchas_columnas_en_tabla.html">Columnas ocultas</a>
+                                </li>
+                            </ul>
+                            <h6>Acciones</h6>
+                            <ul>
+                                <li>
+                                    <a href="cargar_datos.html">Cargar Datos</a>
+                                </li>
+                                <li>
+                                    <a href="selector_regiones.html">Selector de Regiones</a>
+                                </li>
+                                <li>
+                                    <a href="sustraccion_datasets.html">Sustracci&oacute;n</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6 pt-3">
+                    <div class="container">
+                        <h1>Cargar datos</h1>
+                        <p>
+			Alias:
+			Ninguno</p>
+                        <p>
+			Nivel significancia:
+			***</p>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#intro" role="tab" aria-controls="intro" aria-selected="true">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#problema" role="tab" aria-controls="problema" aria-selected="false">Problema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+                                <p class="text-center font-weight-bold">Cargar conjuntos de datos genéticos diferentes en fuente y formato.</p>
+                                <div class="text-center">
+                                    <img class="img-thumbnail img-fluid" src="cargar_datos/portada.png">
+                                    <p class="text-center">Fig. 1 Formulario de carga de datos de Bier.app [1].</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="problema" role="tabpanel" aria-labelledby="problema-tab">
+                                <div class="container">
+                                    <h2>Problema</h2>
+                                    <p>Cargar conjuntos de datos genéticos diferentes en fuente y formato.</p>
+                                    <h2>Contexto</h2>
+                                    <p>El usuario carga datos genéticos para iniciar un análisis de datos genéticos. Los datos están disponibles en varios formatos (p. ej., ficheros BAM, VCF) o provenir de varias fuentes (local o remoto).</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container">
+                                    <h2>Soluci&oacute;n</h2>
+                                    <p class="text-justify">
+Proveer un formulario de carga de datos donde el usuario peda especificar uno o varios conjuntos de datos. Disponer de varias opciones para escoger el origen de los datos (recurso en línea, fichero de texto, contenido de un fichero) y soportar varios formatos (VCF, BAM, json, Fasta). El formulario debe incluir al menos las siguientes entradas de datos:
+<ol>
+	<li>Nombre.- Nombre del fichero a cargar.</li>
+	<li>Tipo.- Formato del fichero que puede tomar varios valores  (p.ej., VCF, json, fasta, fastaq. dbsnf.tabular, gff3).</li>
+	<li>Contenido.- Los datos que se desea analizar. Permitir seleccionar conjuntos de datos dependiendo de su: tamaño (megabytes, gigantes  terabytes, etc), accesibilidad (acceso local o remoto), cantidad (número de conjuntos de datos). Si el conjunto de datos se encuentran en uno o varios ficheros locales, el usuario debe poder seleccionarlos navegando por el repositorio local. Si el conjuntos de datos se encuentran disponible en la web, el usuario debe poder indicar la URL del recurso.</li>
+</ol>
+Las acciones disponibles y visibles para procesar la carga de datos incluyen: iniciar carga, pausar, parar, pegar (URL o datos). El procesamiento de los datos debe comunicar al usuario el avance en la lectura y carga del contenido. Esta comunicación incluye, pero no está limitada a, mensajes de error, alertas e información de procesamiento (p. ej. número de líneas procesadas).
+
+
+   </p>
+                                    <h2>Esquema</h2>
+                                    <div class="text-center">
+                                        <img src="cargar_datos/esquema.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container">
+                                    <p>La Figura 2 muestra el formulario de carga de datos provenientes de un fichero local o de un recurso remoto (en la web). El usuario puede arrastrar y soltar en el formulario los ficheros que contienen el o los conjuntos de datos que se desea analizar. En la parte inferior del formulario, el usuario puede indicar el tipo de fichero a cargar (“Type”) y como caso adicional, la especie u organismo al que pertenece el conjunto de datos a cargar. Los comandos de acción del formulario incluyen la opción para cargar un fichero local, copiar y pegar el contenido de un fichero de datos genómico y las opciones para el procesamiento: Pausar, Restablecer, Iniciar/Parar y cerrar formulario.
+				</p>
+                                    <div class="text-center">
+                                        <img class="img-fluid" src="cargar_datos/ejemplo1.png">
+                                    </div>
+                                    <p class="text-center">fig 2. Formulario de carga de datos de la aplicaci&oacute;n Galaxy [1]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright
+								GenomUI Patterns @2018
+							</p>
+                </div>
+            </footer>
+        </div>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

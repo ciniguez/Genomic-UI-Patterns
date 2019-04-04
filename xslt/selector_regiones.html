@@ -1,0 +1,161 @@
+<html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomUI - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo1.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+									Inicio
+									<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+									Acerca de
+									<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 pt-2 postition-fixed border">
+                    <div class="py-2 sticky-top flex-grow-1">
+                        <div class="menu_carlos">
+                            <h6>Genericos</h6>
+                            <ul></ul>
+                            <h6>Filtro</h6>
+                            <ul></ul>
+                            <h6>Visualizar</h6>
+                            <ul>
+                                <li>
+                                    <a href="ideograma.html">Ideograma</a>
+                                </li>
+                                <li>
+                                    <a href="cariograma.html">Cariograma</a>
+                                </li>
+                                <li>
+                                    <a href="pistas_comparativas.html">Pistas comparativas</a>
+                                </li>
+                                <li>
+                                    <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                                </li>
+                                <li>
+                                    <a href="mashup_interface.html">Mashup interface</a>
+                                </li>
+                                <li>
+                                    <a href="muchas_columnas_en_tabla.html">Columnas ocultas</a>
+                                </li>
+                            </ul>
+                            <h6>Acciones</h6>
+                            <ul>
+                                <li>
+                                    <a href="cargar_datos.html">Cargar Datos</a>
+                                </li>
+                                <li>
+                                    <a href="selector_regiones.html">Selector de Regiones</a>
+                                </li>
+                                <li>
+                                    <a href="sustraccion_datasets.html">Sustracci&oacute;n</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6 pt-3">
+                    <div class="container">
+                        <h1>Selector de Regiones</h1>
+                        <p>
+			Alias:
+			Ninguno</p>
+                        <p>
+			Nivel significancia:
+			***</p>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#intro" role="tab" aria-controls="intro" aria-selected="true">Intro</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#problema" role="tab" aria-controls="problema" aria-selected="false">Problema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+                                <p class="text-center font-weight-bold">Especificar regiones de interés dentro del genoma.</p>
+                                <div class="text-center">
+                                    <img class="img-thumbnail img-fluid" src="selector_regiones/portada.png">
+                                    <p class="text-center">Fig. 2 Opciones del filtro &ldquo;Genomic Locus&rdquo; de la aplicaci&oacute;n GENESIS 2.0.[1].</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="problema" role="tabpanel" aria-labelledby="problema-tab">
+                                <div class="container">
+                                    <h2>Problema</h2>
+                                    <p>Especificar regiones de interés dentro del genoma.</p>
+                                    <h2>Contexto</h2>
+                                    <p> 
+<ul>
+	<li>El usuario quiere enfocarse en una región o regiones concretas dentro del genoma.</li>
+	<li>El usuario conoce las posiciones o coordenadas exactas (locus del genoma) de las regiones que quiere visualizar o explorar.</li>
+</ul>
+
+		</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container">
+                                    <h2>Soluci&oacute;n</h2>
+                                    <p class="text-justify">Permitir al usuario indicar el número de cromosoma y, dentro de él, la región de interés especificando el locus inicial (posición inicial) y el locus final (posición final). Una alternativa más elaborada de este mecanismo de selección puede permite especificar varios cromosomas y las coordenadas de inicio y fin se aplican para todos los cromosomas seleccionados (como lo muestra la Fig. 1).
+    Para usuarios con poca experiencia computacional se puede proveer controles de desplazamiento (p.ej. slider) que permiten manualmente especificar el rango de interés, sin embargo, esta opción no es recomendada para especificar posiciones precisas.
+</p>
+                                    <h2>Esquema</h2>
+                                    <div class="text-center">
+                                        <img src="selector_regiones/esquema.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container">
+                                    <p>La flecha en la parte inferior señala un cuadro que remarca el control de interfaz de usuario utilizado para configurar la región de la secuencia del genoma que se quiere visualizar.
+				</p>
+                                    <div class="text-center">
+                                        <img class="img-fluid" src="selector_regiones/ejemplo1.png">
+                                    </div>
+                                    <p class="text-center">Fig. 2 Control para establecer la regi&oacute;n de enfoque. Sitio web Gramene [2]
+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright
+								GenomUI Patterns @2018
+							</p>
+                </div>
+            </footer>
+        </div>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/patronBoot.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GenomUI - Patterns</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/heroic-features.css" rel="stylesheet">
+  <link href="../css/carlos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg color1 fixed-top">
+    <a class="navbar-brand" href="../index.html"><img src="../img/logo1.svg"></a>
+    <!--a class="navbar-brand" href="#"><span class="logo1">GenomUI</span><span class="espaciado">Patterns</span></a-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Inicio
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contactos</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container-fluid">
+    <div class="row text-left">
+      <!-- menu-->
+      <div class="col-lg-3 col-md-4 mb-6 pt-2 postition-fixed border">
+        <div class="py-2 sticky-top flex-grow-1">
+			<div class="menu_carlos">
+          <h6>Filtro</h6>
+          <ul>
+            <li><a href="selector_regiones.html">Selector de regiones</a></li>
+          </ul>
+          <h6>Visualizar</h6>
+          <ul>
+            <li><a href="ideograma.html">Ideograma</a></li>
+            <li><a href="cariograma.html">Cariograma</a></li>
+            <li><a href="pistas_comparativas.html">Pistas comparativas</a></li>
+            <li><a href="navegador_genomico.html">Navegador Genómico</a></li>
+            <li><a href="mashup_interface.html">Mashup interface</a></li>
+            <li><a href="muchas_columnas_en_tabla.html">Columnas ocultas</a></li>
+          </ul>
+          <h6>Acciones</h6>
+              <ul>
+                <li><a href="cargar_datos.html">Cargar Datos</a></li>
+                <li><a href="secuencia_acciones.html">Secuencia de acciones</a></li>
+              </ul>
+          <h6>Operaciones</h6>
+              <ul>
+                <li><a href="sustraccion_datasets.html">Sustracción</a></li>
+                <li><a href="caja_operaciones.html">Operaciones de conjunto</a></li>
+              </ul>
+      		</div>
+        </div>
+      </div>
+      <!--fin menu-->
+      <!-- Contenido -->
+      <div class="col-lg-9 col-md-8 mb-6 pt-3">
+        <div class="container">
+          <!-- InstanceBeginEditable name="contenido" -->
+          <div><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;">Selector de regiones</span></div><div><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Alias:</span><span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;">ninguno</span></div><div><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Nivel de significancia:</span><span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;"> ***</span></div><div><br/></div><div style="text-align: center;"><img src="selector_regiones.html.resources/Gem.app_FiltroLocusGenomico.png" height="433" width="471"/><br/></div><div style="text-align: center;"><span style="font-size: 11px;">Fig. 2 Opciones del filtro “Genomic Locus” de la aplicación GENESIS 2.0.[1]</span></div><div style="text-align: center;"><br/></div><div style="text-align: center;"><span style="font-size: 11px;">Pie Foto</span></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Problema</span></div><ul><li><div>Especificar regiones de interés dentro del genoma</div></li></ul><div><span style="font-size: 18px; font-weight: bold;">Contexto</span></div><ul><li><div>El usuario quiere enfocarse en una región o regiones concretas dentro del genoma.</div></li><li><div>El usuario conoce las posiciones o coordenadas exactas (locus del genoma) de las regiones que quiere visualizar o explorar.</div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Solución</span></div><div style="text-align: justify;">Permitir al usuario indicar el número de cromosoma y, dentro de él, la región de interés especificando el locus inicial (posición inicial) y el locus final (posición final). Una alternativa más elaborada de este mecanismo de selección puede permite especificar varios cromosomas y las coordenadas de inicio y fin se aplican para todos los cromosomas seleccionados (como lo muestra la Fig. 1).</div><div style="text-align: justify;"><span>    Para usuarios con poca experiencia computacional se puede proveer controles de desplazamiento (p.ej. slider) que permiten manualmente especificar el rango de interés, sin embargo, esta opción no es recomendada para especificar posiciones precisas.</span><br/></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Estructura</span></div><div style="text-align: center;"><br/></div><hr style="text-align: center;"/><div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Patrones relacionados</span></div><ul style="text-align: center;"><li><div style="text-align: left;"><span style="font-style: italic;">Asociación</span>: Navegador Genético</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Agregación</span>: ninguna</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Especialización</span>: ninguno</div></li></ul><div style="text-align: center;"><br/></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Ejemplos</span></div><div style="text-align: justify;">La flecha en la parte inferior señala un cuadro que remarca el control de interfaz de usuario utilizado para configurar la región de la secuencia del genoma que se quiere visualizar.</div><div style="text-align: center;"><img src="selector_regiones.html.resources/ejemplo2.png" height="314" width="800"/><br/></div><div style="text-align: center;"><span style="font-size: 11px;">Fig. 2 Control para establecer la región de enfoque. Sitio web Gramene [2]</span></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Bibliografía</span></div><div><span style="font-size: 14px;">[1] GENESIS 2.0 (formalmente GRM.app) (</span><a href="https://genomics.med.miami.edu/">https://genomics</a>)</div><div>[2] Gramene<span style="font-size: 14px;"> (</span><a href="http://www.gramene.org/" style="box-sizing: border-box; background-color: rgb(252, 252, 252); outline-width: 0px; letter-spacing: 0.102px; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; overflow-wrap: break-word; word-break: break-word; font-size: 14px; color: rgb(142, 37, 85); font-family: Georgia, serif; font-variant-caps: normal; font-variant-ligatures: normal;">http://www.gramene.org</a><span style="font-size: 14px;">)</span></div><div><br/></div>
+          
+<!-- InstanceEndEditable -->
+		<div>
+        <br/>
+        <br/>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Termina Contenido --------------------->
+    <!-- Footer -->
+    <footer class="py-2 ci-footer fixed-bottom">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; GenomUI Patterns @2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<!-- InstanceEnd --></html>
