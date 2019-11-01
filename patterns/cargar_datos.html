@@ -1,175 +1,193 @@
-<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/patronBoot.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html><html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomIU - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos_blanco.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+							Inicio
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+							Acerca de
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 menu_carlos azul">
+                    <div class="menu_carlos_interno">
+                        <h6>Acciones</h6>
+                        <ul>
+                            <li>
+                                <a href="buscar.html">Buscar</a>
+                            </li>
+                            <li>
+                                <a href="cargar_datos.html">Cargar datos</a>
+                            </li>
+                            <li>
+                                <a href="operacion_conjuntos.html">Operador de Conjuntos</a>
+                            </li>
+                            <li>
+                                <a href="secuencia_acciones.html">Secuencia de acciones</a>
+                            </li>
+                        </ul>
+                        <h6>Filtro</h6>
+                        <ul>
+                            <li>
+                                <a href="filtro_genomico.html">Filtro Gen&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="selector_regiones.html">Selector Regiones</a>
+                            </li>
+                        </ul>
+                        <h6>Visualizar</h6>
+                        <ul>
+                            <li>
+                                <a href="idiograma.html">Ideograma</a>
+                            </li>
+                            <li>
+                                <a href="grafico.html">Gr&aacute;fico</a>
+                            </li>
+                            <li>
+                                <a href="pista_comparativa.html">Pistas comparativas</a>
+                            </li>
+                            <li>
+                                <a href="circulo_cromosomico.html">Circulo Cromos&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="columnas_ocultas.html">Columnas ocultas</a>
+                            </li>
+                            <li>
+                                <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                            </li>
+                        </ul>
+                        <h6>Genericos</h6>
+                        <ul>
+                            <li>
+                                <a href="navegacion_continua.html">Navegaci&oacute;n continua</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6">
+                    <div class="separador"></div>
+                    <div class="container">
+                        <h1 class="tituloPatron">Cargar Datos</h1>
+                        <p class="text-center font-weight-bold">
+                            <span class="tituloPatron">Problema:</span>Cargar conjuntos de datos genéticos disponibles en diferentes fuentes y formatos.
+                        </p>
+                        <div class="text-center">
+                            <p>
+                                <img src="cargar_datos/portada.png">
+                            </p>
+                            <div class="titulo_image">Imagen 6.5 Formulario de carga de datos de la aplicación Bier.app</div>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="contexto-tab" data-toggle="tab" href="#contexto" role="tab" aria-controls="contexto" aria-selected="false">Contexto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="solucion-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="esquema-tab" data-toggle="tab" href="#esquema" role="tab" aria-controls="esquema" aria-selected="false">Esquema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="relaciones-tab" data-toggle="tab" href="#relaciones" role="tab" aria-controls="relaciones" aria-selected="true">Patrones relacionados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="ejemplos-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="meta-tab" data-toggle="tab" href="#meta" role="tab" aria-controls="meta" aria-selected="true">Metadatos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+                                <div class="container parte">Previo a la ejecución de consultas y operaciones sobre los datos, el usuario (novato o experto) necesitan importar dichos datos. Los datos pueden estar disponibles localmente o en recursos
+			externos, así como en varios formatos (p. ej., BAM, VCF, PED).</div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container parte">
+                                    <div><p>Proveer un formulario de carga de datos que le permita al usuario realizar la siguiente secuencia de acciones: 
+<p>1) Seleccionar el origen/fuente de datos (p. ej., recurso en línea, fichero de texto, texto). Permitir varias opciones de ingreso de datos. Por ejemplo, si el conjunto de datos se encuentra en uno o varios ficheros locales, permitir al usuario navegar por el repositorio local y seleccionar los ficheros; si el conjunto de datos es accesible por la web, permitir al usuario indicar la URL del recurso; si el conjunto de datos es textual, permitir al usuario copiar y pegar el contenido en el formulario.</p>
+<p>2) Opcionalmente, indicar el formato del contenido (p. ej., VCF); </p>
+<p>3) Validar el contenido; los resultados de la validación del contenido realizada internamente por el sistema deben ser mostrados en pantalla.</p>
+<p>4) Importar el contenido si los datos son válidos. Las acciones para importar los datos deben incluir “iniciar” y “cancelar”. Variaciones en las acciones de importación incluyen la acción “pausar” para interrumpir temporalmente el proceso. Es recomendable informar en tiempo real al usuario sobre el estado del procesamiento de los datos indicando como, por ejemplo, el número de ficheros cargados hasta el momento o el porcentaje de avance en la lectura del contenido.</p>
+		
 
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>GenomUI - Patterns</title>
-  <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="../css/heroic-features.css" rel="stylesheet">
-  <link href="../css/carlos.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg color1 fixed-top">
-    <a class="navbar-brand" href="../index.html"><img src="../img/logo1.svg"></a>
-    <!--a class="navbar-brand" href="#"><span class="logo1">GenomUI</span><span class="espaciado">Patterns</span></a-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../index.html">Inicio
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contactos</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container-fluid">
-    <div class="row text-left">
-      <!-- menu-->
-      <div class="col-lg-3 col-md-4 mb-6 pt-2 postition-fixed border">
-        <div class="py-2 sticky-top flex-grow-1">
-			<div class="menu_carlos">
-          <h6>Filtro</h6>
-          <ul>
-            <li><a href="selector_regiones.html">Selector de regiones</a></li>
-          </ul>
-          <h6>Visualizar</h6>
-          <ul>
-            <li><a href="ideograma.html">Ideograma</a></li>
-            <li><a href="cariograma.html">Cariograma</a></li>
-            <li><a href="pistas_comparativas.html">Pistas comparativas</a></li>
-            <li><a href="navegador_genomico.html">Navegador Genómico</a></li>
-            <li><a href="mashup_interface.html">Mashup interface</a></li>
-            <li><a href="muchas_columnas_en_tabla.html">Columnas ocultas</a></li>
-            <li><a href="circulo_cromosomico.html">Círculo cromosómico</a></li>
-          </ul>
-          <h6>Acciones</h6>
-              <ul>
-                <li><a href="cargar_datos.html">Cargar Datos</a></li>
-                <li><a href="secuencia_acciones.html">Secuencia de acciones</a></li>
-              </ul>
-          <h6>Operaciones</h6>
-              <ul>
-                <li><a href="sustraccion_datasets.html">Sustracción</a></li>
-                <li><a href="caja_operaciones.html">Operaciones de conjunto</a></li>
-              </ul>
-      		</div>
+		</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="relaciones" role="tabpanel" aria-labelledby="relaciones-tab">
+                                <div class="container parte">
+                                    <ul>
+                                        <li>Asociaci&oacute;n (relacionado a)</li>
+                                        <ul>
+                                            <li type="squeare">
+                                                <a href="operacion_conjuntos.html">Operaci&oacute;n de conjuntos</a>
+                                            </li>
+                                        </ul>
+                                        <li>Agregaci&oacute;n (tiene un)</li>
+                                        <ul></ul>
+                                        <li>Especializaci&oacute;n (es un)</li>
+                                        <ul></ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="esquema" role="tabpanel" aria-labelledby="esquema-tab">
+                                <div class="container parte">
+                                    <img src="cargar_datos/esquema.png">
+                                    <div class="titulo_image">Imagen 6.6 Esquema del patrón Cargar Datos</div>
+                                    <p>
+			El patrón se crea instanciando la clase “DataLoadPanel”. Los atributos <i>fuente de datos</i> (“datasource”) y <i>formato</i> (“format”) son internos de la clase. Los métodos de la clase se corresponden con las posibles acciones que puede realizar el usuario. El resultado de la importación se almacena como una muestra genómica (clase “Sample”) del modelo conceptual del genoma.
+		</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container parte">
+                                    <img src="cargar_datos/ejemplo1.png">
+                                    <div class="titulo_image">Imagen 6.7 Formulario de carga de datos. Fuente: ICGC Data Portal</div>
+                                    <p>La Imagen 6.7 muestra el formulario de carga de datos de la aplicación ICGC Data Portal donde el usuario copia y pega los datos a importar o escoge un fichero a cargar.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="meta" role="tabpanel" aria-labelledby="meta-tab">
+                                <div class="res">
+                                    <div>
+                                        <span class="tl">Alias</span><span class="vl">Ninguno</span><span class="tl">Tipo</span><span class="vl">Patrón</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height:100px;"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright GenomUI Patterns @2018</p>
+                </div>
+            </footer>
         </div>
-      </div>
-      <!--fin menu-->
-      <!-- Contenido -->
-      <div class="col-lg-9 col-md-8 mb-6 pt-3">
-        <div class="container">
-          <!-- InstanceBeginEditable name="contenido" -->
-        <div><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;">Cargar datos</span></div>
-<div><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Alias:</span><span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;">ninguno</span></div>
-<div><font style="font-size: 18px;"><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Nivel de significancia:</span></font> <span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;">***</span></div>
-<div><span style="font-size: 14px;"><br/></span></div>
-<div style="text-align: center;"><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;"><img src="cargar_datos.html.resources/portada.png" height="443" width="600"/><br/></span></div>
-<div style="text-align: center;"><span style="font-size: 11px;">Fig. 1 Formulario de carga de datos de Bier.app [1].</span></div>
-<hr/>
-<div><span style="font-size: 18px; font-weight: bold;">Problema</span></div>
-<ul>
-<li>
-<div><span style="font-size: 14px;">Cargar conjuntos de datos genéticos disponibles en</span> <span style="font-size: 14px;">diferentes fuentes y formatos.</span></div>
-</li>
-</ul>
-<hr/>
-<div><span style="font-size: 18px; font-weight: bold;">Contexto</span></div>
-<ul>
-<li>
-<div style="text-align: justify;"><span style="font-size: 14px;">El usuario carga datos genéticos para iniciar un análisis. Los datos están </span><span style="font-size: 14px;">disponibles en varios formatos (p. ej., ficheros BAM, VCF) o provenir de varias fuentes (local o remoto).</span></div>
-</li>
-</ul>
-<hr/>
-<div><span style="font-size: 18px; font-weight: bold;">Solución</span></div>
-<div style="text-align: justify;"/>
-<ul style="text-align: justify;"/>
-<div style="text-align: justify;"><span style="font-size: 14px;">Proveer un formulario de carga de datos donde el usuario pueda</span> <span style="font-size: 14px;">1) </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">escoger el origen/fuente de datos</span> <span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">(recurso en línea, fichero de texto, texto)</span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">; 2) indicar/especificar el </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">formato del contenido </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">(p.ej., VCF, json, fasta, fastaq. dbsnf.tabular, gff3); 3) Validar el contenido 4) Importar el contenido si los datos son válidos. </span></div>
-<div style="text-align: justify;"><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">En el paso 1, el procesamiento del origen de datos deben considerar aspectos de </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">tamaño (megabytes, gigantes  terabytes, etc), accesibilidad (acceso local o remoto), cantidad (número de conjuntos de datos). </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">Si el conjunto de datos se encuentran en uno o varios ficheros locales, permitir al usuario seleccionar los ficheros navegando por el repositorio local. </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">Si el conjuntos de datos se encuentran disponible en la web, el usuario debe poder indicar la URL del recurso. Si el conjunto de datos es textual, el usuario debe poder copiar el contenido y pegarlo en el formulario.</span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;"><br/></span></div>
-<div style="text-align: justify;"><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">En el paso 3, la validación del contenido la </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">realiza internamente el sistema y los resultados deben ser mostrados en pantalla.</span></div>
-<div style="text-align: justify;"><span style="font-size: 14px;">Incluir acciones para procesar la carga de datos tales como: iniciar carga, pausar, parar, pegar (URL o datos). Si es posible, informar en tiempo real al usuario sobre el procesamiento de los datos (</span><span style="font-size: 14px;">avance en la lectura y carga del contenido).</span><br/></div>
-<hr/>
-<div><span style="font-size: 18px; font-weight: bold;">Estructura</span></div>
-<div style="text-align: center;"><img src="cargar_datos.html.resources/esquema.png" height="152" width="600"/><br/></div>
-<hr style="text-align: center;"/>
-<div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Patrones relacionados</span></div>
-<ul style="text-align: center;">
-<li>
-<div style="text-align: left;"><span style="font-style: italic;">Asociación</span>: ninguna</div>
-</li>
-<li>
-<div style="text-align: left;"><span style="font-style: italic;">Agregación</span>: ninguna</div>
-</li>
-<li>
-<div style="text-align: left;"><span style="font-style: italic;">Especialización</span>: ninguno</div>
-</li>
-</ul>
-<div style="text-align: center;"><br/></div>
-<hr/>
-<div><span style="font-size: 18px; font-weight: bold;">Ejemplos</span></div>
-<div style="text-align: center;"><span style="font-size: 18px;"><img src="cargar_datos.html.resources/ejemplo1.png" height="478" width="784"/><br/></span></div>
-<div style="text-align: center;"><span style="font-size: 11px;">Fig. 2 Formulario de carga de datos de la aplicación Galaxy [1]</span></div>
-<div style="text-align: center;"><br/></div>
-<hr/>
-<div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Usos Conocidos</span></div>
-<div style="text-align: left;"><span style="font-size: 14px;">VCF Miner [3]</span></div>
-<hr/>
-<div><span style="font-size: 18px; font-weight: bold;">Bibliografía</span></div>
-<div><a href="http://www.babelomics.org/">[1]</a> Bier.app</div>
-<div><a href="https://usegalaxy.org/">[2]</a> Galaxy</div>
-<div>[3] VCF Miner (<span style="font-size: 14px;"><a href="http://bioinformaticstools.mayo.edu/research/vcf-miner/" style="font-size: 14px;">http://bioinformaticstools.mayo.edu/research/vcf-miner/</a>)</span></div>
-<div><br/></div>
-          
-<!-- InstanceEndEditable -->
-		<div>
-        <br/>
-        <br/>
-        </div>
-        </div>
-      </div>
-    </div>
-    <!-- Termina Contenido --------------------->
-    <!-- Footer -->
-    <footer class="py-2 ci-footer fixed-bottom">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; GenomUI Patterns @2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-<!-- InstanceEnd --></html>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

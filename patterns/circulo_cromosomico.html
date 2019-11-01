@@ -1,120 +1,202 @@
-<!DOCTYPE html>
-<html lang="en"><!-- InstanceBegin template="/Templates/patronBoot.dwt" codeOutsideHTMLIsLocked="false" -->
-
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>GenomUI - Patterns</title>
-  <!-- Bootstrap core CSS -->
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="../css/heroic-features.css" rel="stylesheet">
-  <link href="../css/carlos.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg color1 fixed-top">
-    <a class="navbar-brand" href="../index.html"><img src="../img/logo1.svg"></a>
-    <!--a class="navbar-brand" href="#"><span class="logo1">GenomUI</span><span class="espaciado">Patterns</span></a-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="../index.html">Inicio
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contactos</a>
-        </li>
-      </ul>
-    </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="container-fluid">
-    <div class="row text-left">
-      <!-- menu-->
-      <div class="col-lg-3 col-md-4 mb-6 pt-2 postition-fixed border">
-        <div class="py-2 sticky-top flex-grow-1">
-			<div class="menu_carlos">
-          <h6>Filtro</h6>
-          <ul>
-            <li><a href="selector_regiones.html">Selector de regiones</a></li>
-          </ul>
-          <h6>Visualizar</h6>
-          <ul>
-            <li><a href="ideograma.html">Ideograma</a></li>
-            <li><a href="cariograma.html">Cariograma</a></li>
-            <li><a href="pistas_comparativas.html">Pistas comparativas</a></li>
-            <li><a href="navegador_genomico.html">Navegador Genómico</a></li>
-            <li><a href="mashup_interface.html">Mashup interface</a></li>
-            <li><a href="muchas_columnas_en_tabla.html">Columnas ocultas</a></li>
-            <li><a href="circulo_cromosomico.html">Círculo cromosómico</a></li>
-          </ul>
-          <h6>Acciones</h6>
-              <ul>
-                <li><a href="cargar_datos.html">Cargar Datos</a></li>
-                <li><a href="secuencia_acciones.html">Secuencia de acciones</a></li>
-              </ul>
-          <h6>Operaciones</h6>
-              <ul>
-                <li><a href="sustraccion_datasets.html">Sustracción</a></li>
-                <li><a href="caja_operaciones.html">Operaciones de conjunto</a></li>
-              </ul>
-      		</div>
+<!DOCTYPE html><html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomIU - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos_blanco.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+							Inicio
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+							Acerca de
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 menu_carlos azul">
+                    <div class="menu_carlos_interno">
+                        <h6>Acciones</h6>
+                        <ul>
+                            <li>
+                                <a href="buscar.html">Buscar</a>
+                            </li>
+                            <li>
+                                <a href="cargar_datos.html">Cargar datos</a>
+                            </li>
+                            <li>
+                                <a href="operacion_conjuntos.html">Operador de Conjuntos</a>
+                            </li>
+                            <li>
+                                <a href="secuencia_acciones.html">Secuencia de acciones</a>
+                            </li>
+                        </ul>
+                        <h6>Filtro</h6>
+                        <ul>
+                            <li>
+                                <a href="filtro_genomico.html">Filtro Gen&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="selector_regiones.html">Selector Regiones</a>
+                            </li>
+                        </ul>
+                        <h6>Visualizar</h6>
+                        <ul>
+                            <li>
+                                <a href="idiograma.html">Ideograma</a>
+                            </li>
+                            <li>
+                                <a href="grafico.html">Gr&aacute;fico</a>
+                            </li>
+                            <li>
+                                <a href="pista_comparativa.html">Pistas comparativas</a>
+                            </li>
+                            <li>
+                                <a href="circulo_cromosomico.html">Circulo Cromos&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="columnas_ocultas.html">Columnas ocultas</a>
+                            </li>
+                            <li>
+                                <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                            </li>
+                        </ul>
+                        <h6>Genericos</h6>
+                        <ul>
+                            <li>
+                                <a href="navegacion_continua.html">Navegaci&oacute;n continua</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6">
+                    <div class="separador"></div>
+                    <div class="container">
+                        <h1 class="tituloPatron">C&iacute;rculo Cromos&oacute;mico</h1>
+                        <p class="text-center font-weight-bold">
+                            <span class="tituloPatron">Problema:</span>Visualizar relaciones entre elementos o posiciones de múltiples secuencias genómicas.
+                        </p>
+                        <div class="text-center">
+                            <p>
+                                <img src="circulo_cromosomico/portada.png">
+                            </p>
+                            <div class="titulo_image">Imagen 6.35 Idiogramas del ratón y la rata, mapas de calor y líneas de enlace. Fuente: RCircos (Zhang, 2013)</div>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="contexto-tab" data-toggle="tab" href="#contexto" role="tab" aria-controls="contexto" aria-selected="false">Contexto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="solucion-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="esquema-tab" data-toggle="tab" href="#esquema" role="tab" aria-controls="esquema" aria-selected="false">Esquema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="relaciones-tab" data-toggle="tab" href="#relaciones" role="tab" aria-controls="relaciones" aria-selected="true">Patrones relacionados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="ejemplos-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="meta-tab" data-toggle="tab" href="#meta" role="tab" aria-controls="meta" aria-selected="true">Metadatos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+                                <div class="container parte"><p>El usuario quiere comparar dos o más secuencias genómicas (común en estudios de genómica comparativa para estudiar la conservación o <i>sintenia</i>), identificando relaciones de elementos o posiciones entre ellas.  Las secuencias son cantidades extensas de datos y la representación tabular no facilita la identificación de relaciones entre los datos.<p></div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container parte">
+                                    <div>
+			Representar la secuencia genómica en una distribución circular de tal manera que se pueda indicar gráficamente los enlaces entre los elementos relacionados de la secuencia, como lo muestra la Imagen 6.36. La
+			secuencia genómica está representada por idiogramas (1) dispuestos en una composición circular. Los elementos cromosómicos (2) que se desea visualizar dentro del ideograma, son indicados respetando
+			la posición dentro de la secuencia del cromosoma. Las relaciones entre elementos cromosómicos (2), o sectores de secuencia (3) están indicados a través de enlaces (4)(5) que conectan las posiciones
+			de los ideogramas asociados. En el caso de existir categorías de enlaces, pintar los enlaces con diferentes colores para distinguir entre las diferentes categorías (p.ej., el color de los enlaces
+			que conectan genes que participan en una determinada ruta metabólica difiere del color de los enlaces que conectan grupos de regiones similares en la secuencia). Para contextualizar la información
+			genómica y mejorar el análisis de la secuencia, agregar anotaciones sobre (o por debajo) de los idiogramas a través del patrón “Pista Comparativa” (6).
+		</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="relaciones" role="tabpanel" aria-labelledby="relaciones-tab">
+                                <div class="container parte">
+                                    <ul>
+                                        <li>Asociaci&oacute;n (relacionado a)</li>
+                                        <ul></ul>
+                                        <li>Agregaci&oacute;n (tiene un)</li>
+                                        <ul>
+                                            <li type="squeare">
+                                                <a href="idiograma.html">Idiograma</a>
+                                            </li>
+                                            <li type="squeare">
+                                                <a href="pista_comparativa.html">Pista comparativa</a>
+                                            </li>
+                                        </ul>
+                                        <li>Especializaci&oacute;n (es un)</li>
+                                        <ul>
+                                            <li type="squeare">
+                                                <a href="navegador_genomico.html">Navegador gen&oacute;mico</a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="esquema" role="tabpanel" aria-labelledby="esquema-tab">
+                                <div class="container parte">
+                                    <img src="circulo_cromosomico/esquema.png">
+                                    <div class="titulo_image">Imagen 6.37 Esquema para el patrón Círculo Cromosómico</div>
+                                    <p>
+			<p>El patrón Círculo Cromosómico se crea instanciando la clase “CirculoCromosomico”. El patrón se compone del patrón “Idiograma” (clase “Idiograma”) para representar, en una distribución circular, los cromosomas (clase “Cromosoma”) del esquema de datos del modelo conceptual del genoma. Cada cromosoma está compuesto de elementos (clase “Elemento_Cromosoma”). Por ejemplo, los genes o exones son elementos de la secuencia cromosómica que tienen su posición inicial y final dentro de la secuencia. </p>
+<p>Los elementos o sectores de la secuencia cromosómica pueden compartir una relación de cualquier tipo (p. ej., genes participando en una misma ruta metabólica o “pathway”). Por lo tanto, por cada relación existente, dibujar un enlace o línea conectando a los elementos o sectores que comparten la relación. Si existen categorías entre las relaciones, pintar de un mismo color todos los enlaces que pertenecen a una categoría de relación. Enlaces de otras categorías tendrán un color diferente.<p>
+			
+		</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container parte">
+                                    <img src="circulo_cromosomico/">
+                                    <div class="titulo_image"></div>
+                                    <p>Este patrón se encuentra implementado en las interfaces de usuario de las aplicaciones: Circos, J-Circos, ChromoWheel. Librerías que implementan el patrón: RCircos (como lo muestra la
+					portada Imagen 6.35), BioCircos.js.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="meta" role="tabpanel" aria-labelledby="meta-tab">
+                                <div class="res">
+                                    <div>
+                                        <span class="tl">Alias</span><span class="vl">Radial Table (Tidwell, 2010)</span><span class="tl">Tipo</span><span class="vl">Patrón</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height:100px;"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright GenomUI Patterns @2018</p>
+                </div>
+            </footer>
         </div>
-      </div>
-      <!--fin menu-->
-      <!-- Contenido -->
-      <div class="col-lg-9 col-md-8 mb-6 pt-3">
-        <div class="container">
-          <!-- InstanceBeginEditable name="contenido" -->
-<div><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;">Círculo Cromosómico</span></div><div><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Alias: </span><span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;">Radial Table</span> <span style="font-family: &quot;Trebuchet MS&quot;;">[2]</span><span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;"> </span></div><div><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Tipo:</span> patrón</div><div><br/></div><div style="text-align: center;"><img src="circulo_cromosomico.html.resources/portada.png" height="301" width="500"/><br/></div><div style="text-align: center;"><font style="font-size: 11px;">Fig. 1 Círculo cromosómico</font></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Problema</span></div><div>
-<span style="font-size: 15px; font-family: Helvetica; font-stretch: normal; font-style: normal; font-variant-caps: normal; font-weight: normal; line-height: normal;">Visualizar relaciones entre </span><span style="font-size: 15px; font-family: Helvetica;">elementos o posiciones de múltiples secuencias genómicas.</span></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Contexto</span></div><div>
-<span style="font-size: 15px; font-family: Helvetica; font-stretch: normal; font-style: normal; font-variant-caps: normal; font-weight: normal; line-height: normal;">Usuario quiere comparar dos o más secuencias genómicas (común en </span><span style="font-family: Helvetica;">estudios de genómica comparativa para estudiar la conservación o sintenia), identificando relaciones de elementos o posiciones entre ellas. </span>
-<span style="font-size: 15px; font-family: Helvetica; font-stretch: normal; font-style: normal; font-variant-caps: normal; font-weight: normal; line-height: normal;">Las secuencias son cantidades extensas de datos y la representación tabular no facilita la identificación de relaciones entre los datos.</span></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Solución</span></div><div style="text-align: justify;">La Figura 1 presenta la solución. Representar la secuencia genómica a través de ideogramas (1) dispuestos en una composición circular. Si aporta información al análisis, agregar anotaciones sobre los ideogramas a través del patrón “Pistas comparativas” (6).</div><div style="text-align: justify;">Dentro de los ideogramas (1), resaltar los elementos de la secuencia que se quieren visualizar. Si existe relaciones entre elementos cromosómicos (2), o sectores de secuencia (3), dibujar enlaces (4)(5) entre ellos. Si existen varios tipos de relaciones, pintar los enlaces de cada categoría con un color  o tramas diferente a la de las otras categorías.</div><hr/><div><span style="font-size: 18px; font-weight: bold;">Esquema</span></div><div style="text-align: center;"><img src="circulo_cromosomico.html.resources/esquema.png" height="265" width="711"/><br/></div><div style="text-align: justify;">El patrón Círculo cromosómico se crea instanciado la clase “CirculoCromosomico”. El patrón se compone del patrón “Ideograma” (clase “Ideograma”) para representar, en una distribución circular, los cromosomas (clase “Cromosoma”) del esquema de datos del modelo conceptual del genoma. Cada cromosoma está compuesto de elementos (clase “Elemento_Cromosoma”). Por ejemplo, los  genes o exones son elementos de la secuencia cromosómica que tienen su posición inicial y final dentro de la secuencia. </div><div style="text-align: justify;">    Los elementos o sectores de la secuencia cromosómica pueden compartir una relación de cualquier tipo (p. ej., genes participando en una misma ruta metabólica o “pathway”). Por lo tanto, por cada relación existente, dibujar un enlace o línea conectando a los elementos o sectores que comparten la relación. Si existen categorías entre las relaciones, pintar de un mismo color todos los enlaces que pertenecen a una categoría de relación. Enlaces de otras categorías tendrán un color diferente.</div><hr/><div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Patrones relacionados</span></div><ul style="text-align: center;"><li><div style="text-align: left;"><span style="font-style: italic;">Asociación</span>: ninguna</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Agregación</span>: Ideograma</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Especialización</span>: Navegador Genómico</div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Ejemplos</span></div><div style="text-align: center;"><img src="circulo_cromosomico.html.resources/ejemplo.png" height="396" width="400"/><br/></div><div style="text-align: center;"><span style="font-size: 11px;">Fig. Visualización de CIRCOS [1].</span></div><div style="text-align: justify;"><span style="font-size: 14px;">Otros ejemplos son: GenomePixeler [4], ChromoWheel [5].</span></div><div style="text-align: justify;"><span style="font-size: 14px;">En [3] se utiliza CIRCOS para estudiar la genómica del cáncer.</span></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Bibliografía</span></div><div><a href="http://circos.ca/intro/genomic_data/">[1]</a> Krzywinski, M. et al. <a href="http://genome.cshlp.org/content/early/2009/06/15/gr.092759.109.abstract">Circos: an Information Aesthetic for Comparative Genomics</a>.</div><div>[2] <span style="text-indent: -24pt;-en-paragraph:true;">Tidwell, J. (2010).</span> <span style="text-indent: -24pt; font-style: italic;-en-paragraph:true;">Designing interfaces: Patterns for effective interaction design</span><span style="text-indent: -24pt;-en-paragraph:true;">. O’Reilly Media, Inc.</span></div><div><span style="text-indent: -24pt;-en-paragraph:true;">[3] </span><a href="https://www.cancer.gov/espanol/investigacion/areas/genomica">https://www.cancer.gov/espanol/investigacion/areas/genomica</a></div><div>[4] <a href="http://www.atgc.org/GenomePixelizer/GenomePixelizer_Welcome.html">http://www.atgc.org/GenomePixelizer/GenomePixelizer_Welcome.html</a></div><div>[5] <a href="http://bioinformatics.oxfordjournals.org/cgi/content/abstract/20/4/576">http://bioinformatics.oxfordjournals.org/cgi/content/abstract/20/4/576</a></div>
-
-                    <!-- InstanceEndEditable -->
-		<div>
-        <br/>
-        <br/>
-        </div>
-        </div>
-      </div>
-    </div>
-    <!-- Termina Contenido --------------------->
-    <!-- Footer -->
-    <footer class="py-2 ci-footer fixed-bottom">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; GenomUI Patterns @2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="../vendor/jquery/jquery.min.js"></script>
-  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-<!-- InstanceEnd --></html>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
