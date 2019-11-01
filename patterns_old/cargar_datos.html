@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/patronBoot.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GenomUI - Patterns</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/heroic-features.css" rel="stylesheet">
+  <link href="../css/carlos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg color1 fixed-top">
+    <a class="navbar-brand" href="../index.html"><img src="../img/logo1.svg"></a>
+    <!--a class="navbar-brand" href="#"><span class="logo1">GenomUI</span><span class="espaciado">Patterns</span></a-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Inicio
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contactos</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container-fluid">
+    <div class="row text-left">
+      <!-- menu-->
+      <div class="col-lg-3 col-md-4 mb-6 pt-2 postition-fixed border">
+        <div class="py-2 sticky-top flex-grow-1">
+			<div class="menu_carlos">
+          <h6>Filtro</h6>
+          <ul>
+            <li><a href="selector_regiones.html">Selector de regiones</a></li>
+          </ul>
+          <h6>Visualizar</h6>
+          <ul>
+            <li><a href="ideograma.html">Ideograma</a></li>
+            <li><a href="cariograma.html">Cariograma</a></li>
+            <li><a href="pistas_comparativas.html">Pistas comparativas</a></li>
+            <li><a href="navegador_genomico.html">Navegador Genómico</a></li>
+            <li><a href="mashup_interface.html">Mashup interface</a></li>
+            <li><a href="muchas_columnas_en_tabla.html">Columnas ocultas</a></li>
+            <li><a href="circulo_cromosomico.html">Círculo cromosómico</a></li>
+          </ul>
+          <h6>Acciones</h6>
+              <ul>
+                <li><a href="cargar_datos.html">Cargar Datos</a></li>
+                <li><a href="secuencia_acciones.html">Secuencia de acciones</a></li>
+              </ul>
+          <h6>Operaciones</h6>
+              <ul>
+                <li><a href="sustraccion_datasets.html">Sustracción</a></li>
+                <li><a href="caja_operaciones.html">Operaciones de conjunto</a></li>
+              </ul>
+      		</div>
+        </div>
+      </div>
+      <!--fin menu-->
+      <!-- Contenido -->
+      <div class="col-lg-9 col-md-8 mb-6 pt-3">
+        <div class="container">
+          <!-- InstanceBeginEditable name="contenido" -->
+        <div><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;">Cargar datos</span></div>
+<div><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Alias:</span><span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;">ninguno</span></div>
+<div><font style="font-size: 18px;"><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Nivel de significancia:</span></font> <span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;">***</span></div>
+<div><span style="font-size: 14px;"><br/></span></div>
+<div style="text-align: center;"><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;"><img src="cargar_datos.html.resources/portada.png" height="443" width="600"/><br/></span></div>
+<div style="text-align: center;"><span style="font-size: 11px;">Fig. 1 Formulario de carga de datos de Bier.app [1].</span></div>
+<hr/>
+<div><span style="font-size: 18px; font-weight: bold;">Problema</span></div>
+<ul>
+<li>
+<div><span style="font-size: 14px;">Cargar conjuntos de datos genéticos disponibles en</span> <span style="font-size: 14px;">diferentes fuentes y formatos.</span></div>
+</li>
+</ul>
+<hr/>
+<div><span style="font-size: 18px; font-weight: bold;">Contexto</span></div>
+<ul>
+<li>
+<div style="text-align: justify;"><span style="font-size: 14px;">El usuario carga datos genéticos para iniciar un análisis. Los datos están </span><span style="font-size: 14px;">disponibles en varios formatos (p. ej., ficheros BAM, VCF) o provenir de varias fuentes (local o remoto).</span></div>
+</li>
+</ul>
+<hr/>
+<div><span style="font-size: 18px; font-weight: bold;">Solución</span></div>
+<div style="text-align: justify;"/>
+<ul style="text-align: justify;"/>
+<div style="text-align: justify;"><span style="font-size: 14px;">Proveer un formulario de carga de datos donde el usuario pueda</span> <span style="font-size: 14px;">1) </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">escoger el origen/fuente de datos</span> <span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">(recurso en línea, fichero de texto, texto)</span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">; 2) indicar/especificar el </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">formato del contenido </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">(p.ej., VCF, json, fasta, fastaq. dbsnf.tabular, gff3); 3) Validar el contenido 4) Importar el contenido si los datos son válidos. </span></div>
+<div style="text-align: justify;"><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">En el paso 1, el procesamiento del origen de datos deben considerar aspectos de </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">tamaño (megabytes, gigantes  terabytes, etc), accesibilidad (acceso local o remoto), cantidad (número de conjuntos de datos). </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">Si el conjunto de datos se encuentran en uno o varios ficheros locales, permitir al usuario seleccionar los ficheros navegando por el repositorio local. </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">Si el conjuntos de datos se encuentran disponible en la web, el usuario debe poder indicar la URL del recurso. Si el conjunto de datos es textual, el usuario debe poder copiar el contenido y pegarlo en el formulario.</span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;"><br/></span></div>
+<div style="text-align: justify;"><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">En el paso 3, la validación del contenido la </span><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">realiza internamente el sistema y los resultados deben ser mostrados en pantalla.</span></div>
+<div style="text-align: justify;"><span style="font-size: 14px;">Incluir acciones para procesar la carga de datos tales como: iniciar carga, pausar, parar, pegar (URL o datos). Si es posible, informar en tiempo real al usuario sobre el procesamiento de los datos (</span><span style="font-size: 14px;">avance en la lectura y carga del contenido).</span><br/></div>
+<hr/>
+<div><span style="font-size: 18px; font-weight: bold;">Estructura</span></div>
+<div style="text-align: center;"><img src="cargar_datos.html.resources/esquema.png" height="152" width="600"/><br/></div>
+<hr style="text-align: center;"/>
+<div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Patrones relacionados</span></div>
+<ul style="text-align: center;">
+<li>
+<div style="text-align: left;"><span style="font-style: italic;">Asociación</span>: ninguna</div>
+</li>
+<li>
+<div style="text-align: left;"><span style="font-style: italic;">Agregación</span>: ninguna</div>
+</li>
+<li>
+<div style="text-align: left;"><span style="font-style: italic;">Especialización</span>: ninguno</div>
+</li>
+</ul>
+<div style="text-align: center;"><br/></div>
+<hr/>
+<div><span style="font-size: 18px; font-weight: bold;">Ejemplos</span></div>
+<div style="text-align: center;"><span style="font-size: 18px;"><img src="cargar_datos.html.resources/ejemplo1.png" height="478" width="784"/><br/></span></div>
+<div style="text-align: center;"><span style="font-size: 11px;">Fig. 2 Formulario de carga de datos de la aplicación Galaxy [1]</span></div>
+<div style="text-align: center;"><br/></div>
+<hr/>
+<div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Usos Conocidos</span></div>
+<div style="text-align: left;"><span style="font-size: 14px;">VCF Miner [3]</span></div>
+<hr/>
+<div><span style="font-size: 18px; font-weight: bold;">Bibliografía</span></div>
+<div><a href="http://www.babelomics.org/">[1]</a> Bier.app</div>
+<div><a href="https://usegalaxy.org/">[2]</a> Galaxy</div>
+<div>[3] VCF Miner (<span style="font-size: 14px;"><a href="http://bioinformaticstools.mayo.edu/research/vcf-miner/" style="font-size: 14px;">http://bioinformaticstools.mayo.edu/research/vcf-miner/</a>)</span></div>
+<div><br/></div>
+          
+<!-- InstanceEndEditable -->
+		<div>
+        <br/>
+        <br/>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Termina Contenido --------------------->
+    <!-- Footer -->
+    <footer class="py-2 ci-footer fixed-bottom">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; GenomUI Patterns @2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<!-- InstanceEnd --></html>

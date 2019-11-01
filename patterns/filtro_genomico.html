@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomIU - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos_blanco.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+							Inicio
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+							Acerca de
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 menu_carlos azul">
+                    <div class="menu_carlos_interno">
+                        <h6>Acciones</h6>
+                        <ul>
+                            <li>
+                                <a href="buscar.html">Buscar</a>
+                            </li>
+                            <li>
+                                <a href="cargar_datos.html">Cargar datos</a>
+                            </li>
+                            <li>
+                                <a href="operacion_conjuntos.html">Operador de Conjuntos</a>
+                            </li>
+                            <li>
+                                <a href="secuencia_acciones.html">Secuencia de acciones</a>
+                            </li>
+                        </ul>
+                        <h6>Filtro</h6>
+                        <ul>
+                            <li>
+                                <a href="filtro_genomico.html">Filtro Gen&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="selector_regiones.html">Selector Regiones</a>
+                            </li>
+                        </ul>
+                        <h6>Visualizar</h6>
+                        <ul>
+                            <li>
+                                <a href="idiograma.html">Ideograma</a>
+                            </li>
+                            <li>
+                                <a href="grafico.html">Gr&aacute;fico</a>
+                            </li>
+                            <li>
+                                <a href="pista_comparativa.html">Pistas comparativas</a>
+                            </li>
+                            <li>
+                                <a href="circulo_cromosomico.html">Circulo Cromos&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="columnas_ocultas.html">Columnas ocultas</a>
+                            </li>
+                            <li>
+                                <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                            </li>
+                        </ul>
+                        <h6>Genericos</h6>
+                        <ul>
+                            <li>
+                                <a href="navegacion_continua.html">Navegaci&oacute;n continua</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6">
+                    <div class="separador"></div>
+                    <div class="container">
+                        <h1 class="tituloPatron">Filtro Gen&oacute;mico</h1>
+                        <p class="text-center font-weight-bold">
+                            <span class="tituloPatron">Problema:</span>Reducir el conjunto de datos genómico aplicando condiciones a las propiedades de los datos.
+                        </p>
+                        <div class="text-center">
+                            <p>
+                                <img src="filtro_genomico/portada.png">
+                            </p>
+                            <div class="titulo_image">Imagen 6.17 Filtros genómico. Fuente: Sequence Viewer</div>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="contexto-tab" data-toggle="tab" href="#contexto" role="tab" aria-controls="contexto" aria-selected="false">Contexto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="solucion-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="esquema-tab" data-toggle="tab" href="#esquema" role="tab" aria-controls="esquema" aria-selected="false">Esquema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="relaciones-tab" data-toggle="tab" href="#relaciones" role="tab" aria-controls="relaciones" aria-selected="true">Patrones relacionados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="ejemplos-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="meta-tab" data-toggle="tab" href="#meta" role="tab" aria-controls="meta" aria-selected="true">Metadatos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+                                <div class="container parte">
+		A partir de un conjunto numeroso de variaciones o genes de una o varias muestras, el usuario quiere ocultar los datos que no cumplen con cierto criterio establecido para el estudio genético.
+		</div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container parte">
+                                    <div>
+		<p>Presentar al usuario una lista de filtros aplicables al elemento genómico bajo estudio (p. ej., variación genética, gen, muestra). Cualquier propiedad del elemento genómico se puede convertir en filtro. Por ejemplo, tipo de variación, significancia clínica, impacto funcional son propiedades de la variación genética que pueden convertirse en candidatos para filtros. Por lo tanto, para crear un filtro, considerar una propiedad del elemento genómico y expresar los posibles valores por los cuales se puede filtrar a través de cuadros de control como cajas de texto, cuadros de verificación, barras de deslizamiento, etc. </p>
+<p>En el caso de que el área de análisis permita colocar componentes visuales, es recomendable permitir al usuario agregar los filtros al área de análisis y colocarlos libremente en cualquier lugar del área. Esto facilita al análisis visual ya que los filtros pueden ser colocados junto a las visualizaciones. Así, el usuario puede ver la relación causa-efecto de aplicar el filtro sin necesidad de regresar al sector de la interfaz de usuario que contiene las opciones de filtro. </p>
+		
+
+
+		</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="relaciones" role="tabpanel" aria-labelledby="relaciones-tab">
+                                <div class="container parte">
+                                    <ul>
+                                        <li>Asociaci&oacute;n (relacionado a)</li>
+                                        <ul>
+                                            <li type="squeare">
+                                                <a href="grafico.html">Gr&aacute;fico</a>
+                                            </li>
+                                            <li type="squeare">
+                                                <a href="secuencia_acciones.html">Secuencia de Acciones</a>
+                                            </li>
+                                            <li type="squeare">
+                                                <a href="operacion_conjuntos.html">Operaci&oacute;n de conjuntos</a>
+                                            </li>
+                                        </ul>
+                                        <li>Agregaci&oacute;n (tiene un)</li>
+                                        <ul></ul>
+                                        <li>Especializaci&oacute;n (es un)</li>
+                                        <ul></ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="esquema" role="tabpanel" aria-labelledby="esquema-tab">
+                                <div class="container parte">
+                                    <img src="filtro_genomico/esquema.png">
+                                    <div class="titulo_image">Imagen 6.18 Esquema del patrón Filtro Genómico</div>
+                                    <p>
+			
+		</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container parte">
+                                    <img src="filtro_genomico/ejemplo1.png">
+                                    <div class="titulo_image">Imagen 6.19 Filtros de la aplicaci&oacute;n GENESIS 2.0</div>
+                                    <p>
+				La Imagen 6.19 es una porción de la interfaz de la aplicación GENESIS 2.0. que muestra dos filtros. El primero, “Sequence quality”, es un filtro aplicado a la calidad de las lecturas de la secuencia donde los posibles valores del filtro son profundidad (DP), calidad asignada al genotipo (GQ) y calidad (QUAL) y que son explicados en la especificación del fichero VCF. El segundo, Variant Type, filtra las variaciones genéticas por su clase (p. ej., SNV, inserción, eliminación, etc). 
+				</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="meta" role="tabpanel" aria-labelledby="meta-tab">
+                                <div class="res">
+                                    <div>
+                                        <span class="tl">Alias</span><span class="vl">Ninguno</span><span class="tl">Tipo</span><span class="vl">Patrón</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height:100px;"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright GenomUI Patterns @2018</p>
+                </div>
+            </footer>
+        </div>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

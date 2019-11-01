@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/patronBoot.dwt" codeOutsideHTMLIsLocked="false" -->
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>GenomUI - Patterns</title>
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../css/heroic-features.css" rel="stylesheet">
+  <link href="../css/carlos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg color1 fixed-top">
+    <a class="navbar-brand" href="../index.html"><img src="../img/logo1.svg"></a>
+    <!--a class="navbar-brand" href="#"><span class="logo1">GenomUI</span><span class="espaciado">Patterns</span></a-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../index.html">Inicio
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contactos</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container-fluid">
+    <div class="row text-left">
+      <!-- menu-->
+      <div class="col-lg-3 col-md-4 mb-6 pt-2 postition-fixed border">
+        <div class="py-2 sticky-top flex-grow-1">
+			<div class="menu_carlos">
+          <h6>Filtro</h6>
+          <ul>
+            <li><a href="selector_regiones.html">Selector de regiones</a></li>
+          </ul>
+          <h6>Visualizar</h6>
+          <ul>
+            <li><a href="ideograma.html">Ideograma</a></li>
+            <li><a href="cariograma.html">Cariograma</a></li>
+            <li><a href="pistas_comparativas.html">Pistas comparativas</a></li>
+            <li><a href="navegador_genomico.html">Navegador Genómico</a></li>
+            <li><a href="mashup_interface.html">Mashup interface</a></li>
+            <li><a href="muchas_columnas_en_tabla.html">Columnas ocultas</a></li>
+            <li><a href="circulo_cromosomico.html">Círculo cromosómico</a></li>
+          </ul>
+          <h6>Acciones</h6>
+              <ul>
+                <li><a href="cargar_datos.html">Cargar Datos</a></li>
+                <li><a href="secuencia_acciones.html">Secuencia de acciones</a></li>
+              </ul>
+          <h6>Operaciones</h6>
+              <ul>
+                <li><a href="sustraccion_datasets.html">Sustracción</a></li>
+                <li><a href="caja_operaciones.html">Operaciones de conjunto</a></li>
+              </ul>
+      		</div>
+        </div>
+      </div>
+      <!--fin menu-->
+      <!-- Contenido -->
+      <div class="col-lg-9 col-md-8 mb-6 pt-3">
+        <div class="container">
+          <!-- InstanceBeginEditable name="contenido" -->
+         <div><span style="font-size: 24px; font-family: &quot;Trebuchet MS&quot;;">Cariograma</span></div><div><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Alias:</span><span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;">ninguno</span></div><div><span style="font-size: 18px; font-family: &quot;Trebuchet MS&quot;; font-weight: bold;">Nivel de significancia:</span> <span style="font-size: 14px; font-family: &quot;Trebuchet MS&quot;;">***</span></div><div><br/></div><div style="text-align: center;"><img src="cariograma.html.resources/93886C1B-43C8-43A0-AF9A-638A86A7ED7F.png" height="321" width="800"/><br/></div><div style="text-align: center;"><span style="font-size: 11px;">Fig 3. Cariograma del sitio e!Ensembl mostrando la configuración de cromosomas de la especie humana (GRCh38.p)</span></div><div/><hr/><div><span style="font-size: 18px; font-weight: bold;">Problema</span></div><div>¿Cómo representar el  conjunto de cromosomas de una especie?</div><hr/><div><span style="font-size: 18px; font-weight: bold;">Contexto</span></div><div style="text-align: justify;">A partir de los datos de la secuencia genética del ADN de una especie, el investigador quiere identificar visualmente la organización cromosómica. En estudios citogenéticos, los especialistas del dominio están familiarizados con el uso de <span style="font-style: italic;">cariotipos </span>para <span style="font-size: 15px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">identificar anomalías cromosómicas como causa de malformaciones o de enfermedad. </span></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Fuerzas</span></div><ul><li><div style="text-align: justify;">El cariotipo y su nomenclatura ISCN (<span style="font-style: italic;">International System for Human Cytogenetics Nomenclatura</span>) se convierte en un lenguaje estándar para los investigadores en el área genómica.</div></li><li><div style="text-align: justify;">La gran cantidad de datos de la secuencia de ADN dificulta visualizar el complejo cromosómico.</div></li><li><div style="text-align: justify;">El usuario necesita visualizar una estructura de organización de alto nivel de la secuencia de ADN.</div></li></ul><hr/><div><span style="font-size: 18px; font-weight: bold;">Solución</span></div><div style="text-align: justify;">Presentar un mapa <span style="font-style: italic;">citogenético</span> o <span style="font-style: italic;">cariograma</span> de una especie seleccionada. El cariograma es la representación gráfica del cariotipo. Para lo cual:</div><ol><li><div style="text-align: justify;">Agrega un componente visual (panel) a la unidad de interacción, el cual representará el cariograma.</div></li><li><div style="text-align: justify;">Definir el tamaño (ancho y largo) del contenedor y su orientación. La orientación define si el cariograma se presenta de manera horizontal o vertical. El tamaño del contenedor define la escala de dibujo.</div></li><li><div style="text-align: justify;">Por cada cromosoma de la especie seleccionada, dibuja el cromosoma en el contenedor considerando un factor de escala para escalar el tamaño de su secuencia de ADN (número de bases de la secuencia) al tamaño del contenedor.</div></li><li><div style="text-align: justify;">Ordenar los cromosomas ascendentemente por su número, dejando los cromosomas XY, si se incluyen, al final del conjunto de cromosomas.</div></li></ol><div style="text-align: justify;">Opcionalmente, si los datos del cromosoma definen el centrómero, brazo largo (q) y corto (p) entonces:</div><ul><li><div style="text-align: justify;">Dibujar los cromosomas con el brazo corto (“p”) hacia arriba y el brazo largo ("q") hacia abajo.</div></li><li><div style="text-align: justify;">La forma (morfología) del cromosoma respecto a su centrómero puede categorizarlo en cromosoma de tipo; metacéntricos, submetacéntrico, acrocéntrico o telocéntrico.</div></li><li><div style="text-align: justify;"><span style="font-weight: bold;">tamaño</span> (desde los más grandes hasta  a las más pequeños, en relación al número de bases de su secuencia de ADN).</div></li></ul><div style="text-align: justify;">El patrón <a href="evernote:///view/35787331/s273/d1183f91-0889-401b-80ad-9223793dced5/d1183f91-0889-401b-80ad-9223793dced5/">Ideograma</a> aplicado a este patrón, permite reconocer los cromosomas dentro del conjunto. Este patrón, junto con los <span style="font-weight: bold;">tracks</span> se convierte en un mecanismo <span style="font-weight: bold;">“detalle bajo demanda"</span>  que facilita la navegación por la secuencia genética.</div><hr/><div><span style="font-size: 18px; font-weight: bold;">Estructura</span></div><div style="text-align: center;"><img src="cariograma.html.resources/esquema.png" height="432" width="514"/><br/></div><div style="text-align: center;"><br/></div><hr style="text-align: center;"/><div style="text-align: left;"><span style="font-size: 18px; font-weight: bold;">Patrones relacionados</span></div><ul style="text-align: center;"><li><div style="text-align: left;"><span style="font-style: italic;">Asociación</span>: Ideograma</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Agregación</span>: Navegador Genómico</div></li><li><div style="text-align: left;"><span style="font-style: italic;">Especialización</span>: ninguno</div></li></ul><div style="text-align: center;"><br/></div><hr/><div><span style="font-size: 18px; font-weight: bold;">Ejemplos</span></div><div style="text-align: justify;">La figura 1 muestra una porción de la interfaz de usuario de Genome Maps, donde se muestra la implementación del patrón cariograma (recuadro en color rojo). El cariograma, dispuesto horizontalmente y en una sola fila, representa los 23 pares de cromosomas de la especie humana: 22 pares de cromosomas autonomas y un par de cromosomas gonosomas ( X y o Y, siendo XX para el sexo femenino, y XY para el sexo masculino).</div><div><br/></div><div style="text-align: center;"><img src="cariograma.html.resources/ejemplo1.png" height="160" width="800"/><br/></div><div style="text-align: center;"><span style="font-size: 11px;">fig 1. Cardiograma con Ideograma de</span> <a href="http://www.genomemaps.org/" style="font-size: 11px;">Genome Maps</a></div><div style="text-align: center;"><br/></div><div style="text-align: justify;">La figura 2 muestra la implementación del patrón cariograma, está vez para comparar regiones conservadas entre especies. En la ilustración se presenta una porción de la interfaz de la aplicación G-compass que usa del patrón cariograma para visualizar las regiones comosomómicas conservadas entre la especie humana y el ratón. </div><div style="text-align: justify;"><br/></div><div style="text-align: center;"><img src="cariograma.html.resources/ejemplo2.png" height="395" width="800"/><br/></div><div style="text-align: center;"><span style="font-size: 11px;">Fig 2. Cariograma de aplicación</span> <a href="http://www.h-invitational.jp/g-compass/" style="font-size: 11px;">G-compass</a></div><div style="text-align: justify;">La figura 3 corresponde a una parte de la interfaz del Genome Data Viewer donde se muestra la implementación del patrón cardiograma con la configuración cromosómica del homo sapiens.</div><div style="text-align: center;"><img src="cariograma.html.resources/portada.png" height="259" width="262"/><br/></div><div style="text-align: center;"><span style="font-size: 11px;">Fig 3. Cariograma del</span> <a href="https://www.ncbi.nlm.nih.gov/genome/gdv/browser/?context=genome&amp;acc=GCF_000001405.38" style="font-size: 11px;">Genome Data Viewer</a></div><div><br/></div><div>Otros ejemplos se puede encontrar en las aplicaciones:</div><ul><li><div><a href="http://vega.archive.ensembl.org/Homo_sapiens/Info/Index">Vega</a></div></li></ul><div><br/></div><div><hr/><div><span style="font-size: 18px; font-weight: bold;">Glosario</span></div></div><div style="text-align: justify;"><span style="font-weight: bold;">Cromátida.- </span><span style="letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><span style="font-size: 14px; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;; font-variant-caps: normal; font-variant-ligatures: normal;">Las dos cadenas paralelas de cromatina conectadas en el centrómero que constituyen el cromosoma después de la replicación del ADN.[3]</span></span></div><div style="text-align: justify;"><span style="font-weight: bold;">Centrómero.- </span> Lugar o punto en que se unen las fibras del huso acromático con el cromosoma en la metafase; para que en la anfase los cromosomas sean conducidos hacia los polos. En cromosomas normales, la posición del centrómero siempre es la misma y puede, por su localización, formar dos brazos iguales o dos brazos desiguales en cada cromosoma. Al centrómero también se le designa cinetócoro [2].</div><div><hr/></div><div><font style="font-size: 18px;"><span style="font-size: 18px; font-weight: bold;">Bibliografía</span></font></div><div>[1] <span style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">Oliva, Rafael, et al. </span><span style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-style: italic; font-variant-caps: normal; font-variant-ligatures: normal;">Genética médica</span><span style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">. Vol. 39. Edicions Universitat Barcelona, 2013.</span></div><div><a href="https://glosarios.servidor-alicante.com/biologia/idiograma" style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">[2]</a> <span style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">Glosario de la Alicante.</span></div><div><a href="https://www.institutoroche.es/recursos/glosario" style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">[3]</a> <span style="font-size: 13px; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-variant-caps: normal; font-variant-ligatures: normal;">Glosario Instituo Roche</span></div><div><br/></div>
+
+          <!-- InstanceEndEditable -->
+		<div>
+        <br/>
+        <br/>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- Termina Contenido --------------------->
+    <!-- Footer -->
+    <footer class="py-2 ci-footer fixed-bottom">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; GenomUI Patterns @2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+<!-- InstanceEnd --></html>

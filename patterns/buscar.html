@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomIU - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos_blanco.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+							Inicio
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+							Acerca de
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 menu_carlos azul">
+                    <div class="menu_carlos_interno">
+                        <h6>Acciones</h6>
+                        <ul>
+                            <li>
+                                <a href="buscar.html">Buscar</a>
+                            </li>
+                            <li>
+                                <a href="cargar_datos.html">Cargar datos</a>
+                            </li>
+                            <li>
+                                <a href="operacion_conjuntos.html">Operador de Conjuntos</a>
+                            </li>
+                            <li>
+                                <a href="secuencia_acciones.html">Secuencia de acciones</a>
+                            </li>
+                        </ul>
+                        <h6>Filtro</h6>
+                        <ul>
+                            <li>
+                                <a href="filtro_genomico.html">Filtro Gen&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="selector_regiones.html">Selector Regiones</a>
+                            </li>
+                        </ul>
+                        <h6>Visualizar</h6>
+                        <ul>
+                            <li>
+                                <a href="idiograma.html">Ideograma</a>
+                            </li>
+                            <li>
+                                <a href="grafico.html">Gr&aacute;fico</a>
+                            </li>
+                            <li>
+                                <a href="pista_comparativa.html">Pistas comparativas</a>
+                            </li>
+                            <li>
+                                <a href="circulo_cromosomico.html">Circulo Cromos&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="columnas_ocultas.html">Columnas ocultas</a>
+                            </li>
+                            <li>
+                                <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                            </li>
+                        </ul>
+                        <h6>Genericos</h6>
+                        <ul>
+                            <li>
+                                <a href="navegacion_continua.html">Navegaci&oacute;n continua</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6">
+                    <div class="separador"></div>
+                    <div class="container">
+                        <h1 class="tituloPatron">Buscar</h1>
+                        <p class="text-center font-weight-bold">
+                            <span class="tituloPatron">Problema:</span>Buscar información de elementos genómicos.
+                        </p>
+                        <div class="text-center">
+                            <p>
+                                <img src="buscar/portada.png">
+                            </p>
+                            <div class="titulo_image">
+			Imagen 6.14 Patrón buscar. Fuente: aplicación BioGPS
+		</div>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="contexto-tab" data-toggle="tab" href="#contexto" role="tab" aria-controls="contexto" aria-selected="false">Contexto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="solucion-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="esquema-tab" data-toggle="tab" href="#esquema" role="tab" aria-controls="esquema" aria-selected="false">Esquema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="relaciones-tab" data-toggle="tab" href="#relaciones" role="tab" aria-controls="relaciones" aria-selected="true">Patrones relacionados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="ejemplos-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="meta-tab" data-toggle="tab" href="#meta" role="tab" aria-controls="meta" aria-selected="true">Metadatos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+                                <div class="container parte">El usuario explora la información genómica partiendo de una búsqueda directa y sencilla de elementos genómicos. El usuario tiene poco conocimiento sobre la estructura de la información
+			genómica y las propiedades intrínsecas. Por lo tanto, el usuario necesita guía sobre qué buscar y cómo buscar en el conjunto de datos genómico.</div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container parte">
+                                    <div>
+		<p>Permitir al usuario ingresar un término de búsqueda relacionado un elemento específico del modelo (p. ej., variación, gene, fenotipo) y que es de interés para el usuario. Para guiar la búsqueda, se recomienda mostrar sugerencias (o ejemplos) sobre términos de búsqueda que pueden ser ingresados y que producen resultados reales al ser consultados.</p>
+<p>El término de búsqueda debe soportar varias alternativas de búsqueda relacionadas a las propiedades del elemento genómico. Por ejemplo, para buscar información de un gen, el usuario puede indicar como término de búsqueda cualquiera de las dos opciones: el símbolo del gen (es decir, la abreviación de su nombre) o el identificador del gen en la base de conocimiento Gen Ontology. Es recomendable flexibilizar la búsqueda permitiendo que el término de búsqueda a) pueda ser una lista de términos (p. ej., una lista de símbolos de genes) o b) permita el uso de comodines (* ó ?) par encontrar coincidencias.</p>
+		
+
+
+		</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="relaciones" role="tabpanel" aria-labelledby="relaciones-tab">
+                                <div class="container parte">
+                                    <ul>
+                                        <li>Asociaci&oacute;n (relacionado a)</li>
+                                        <ul>
+                                            <li type="squeare">
+                                                <a href="columnas_ocultas.html">Columna ocultas</a>
+                                            </li>
+                                        </ul>
+                                        <li>Agregaci&oacute;n (tiene un)</li>
+                                        <ul></ul>
+                                        <li>Especializaci&oacute;n (es un)</li>
+                                        <ul></ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="esquema" role="tabpanel" aria-labelledby="esquema-tab">
+                                <div class="container parte">
+                                    <img src="buscar/esquema.png">
+                                    <div class="titulo_image">Imagen 6.15 Esquema del patrón Buscar</div>
+                                    <p>
+			El patrón se crea instanciando la clase “Search”. El atributo “termOfSearch” captura el término de búsqueda ingresado por el usuario. El método “search()”, ejecutado cuando el usuario
+				solicita buscar, construye la cadena de consulta utilizando el término de búsqueda y realiza la consulta de datos al elemento específico del modelo (clase “GenomicElement”).
+			
+		</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container parte">
+                                    <img src="buscar/ejemplo1.png">
+                                    <div class="titulo_image">Imagen 6.16 Pantalla principal de Mastermind</div>
+                                    <p>
+					La Imagen 6.16 es una porción de la interfaz de usuario principal del sitio Mastermind que presenta tres cajas de texto, una por cada alternativa de búsqueda (enfermedad, gen, variación genética).
+					El texto en cada caja de texto sugiere la información que se puede buscar y la forma de ingresar el término de búsqueda. Así, una variación genética puede ser buscada indicando su identificador
+					expresado en nomenclatura HGVS (p. ej., c.179T>A) o el cambio que produce en la proteína (p. ej., V600E).
+				</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="meta" role="tabpanel" aria-labelledby="meta-tab">
+                                <div class="res">
+                                    <div>
+                                        <span class="tl">Alias</span><span class="vl">Ninguno</span><span class="tl">Tipo</span><span class="vl">Patrón</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height:100px;"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright GenomUI Patterns @2018</p>
+                </div>
+            </footer>
+        </div>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

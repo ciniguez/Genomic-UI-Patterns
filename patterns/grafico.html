@@ -1,0 +1,203 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomIU - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos_blanco.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+							Inicio
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+							Acerca de
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 menu_carlos azul">
+                    <div class="menu_carlos_interno">
+                        <h6>Acciones</h6>
+                        <ul>
+                            <li>
+                                <a href="buscar.html">Buscar</a>
+                            </li>
+                            <li>
+                                <a href="cargar_datos.html">Cargar datos</a>
+                            </li>
+                            <li>
+                                <a href="operacion_conjuntos.html">Operador de Conjuntos</a>
+                            </li>
+                            <li>
+                                <a href="secuencia_acciones.html">Secuencia de acciones</a>
+                            </li>
+                        </ul>
+                        <h6>Filtro</h6>
+                        <ul>
+                            <li>
+                                <a href="filtro_genomico.html">Filtro Gen&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="selector_regiones.html">Selector Regiones</a>
+                            </li>
+                        </ul>
+                        <h6>Visualizar</h6>
+                        <ul>
+                            <li>
+                                <a href="idiograma.html">Ideograma</a>
+                            </li>
+                            <li>
+                                <a href="grafico.html">Gr&aacute;fico</a>
+                            </li>
+                            <li>
+                                <a href="pista_comparativa.html">Pistas comparativas</a>
+                            </li>
+                            <li>
+                                <a href="circulo_cromosomico.html">Circulo Cromos&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="columnas_ocultas.html">Columnas ocultas</a>
+                            </li>
+                            <li>
+                                <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                            </li>
+                        </ul>
+                        <h6>Genericos</h6>
+                        <ul>
+                            <li>
+                                <a href="navegacion_continua.html">Navegaci&oacute;n continua</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6">
+                    <div class="separador"></div>
+                    <div class="container">
+                        <h1 class="tituloPatron">Gr&aacute;fico</h1>
+                        <p class="text-center font-weight-bold">
+                            <span class="tituloPatron">Problema:</span>Presentar visualmente el comportamiento del conjunto de datos genómico.
+                        </p>
+                        <div class="text-center">
+                            <p>
+                                <img src="grafico/portada.png">
+                            </p>
+                            <div class="titulo_image">Imagen 6.23 Patrón gráfico. Fuente: GENESIS 2.0.</div>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="contexto-tab" data-toggle="tab" href="#contexto" role="tab" aria-controls="contexto" aria-selected="false">Contexto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="solucion-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="esquema-tab" data-toggle="tab" href="#esquema" role="tab" aria-controls="esquema" aria-selected="false">Esquema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="relaciones-tab" data-toggle="tab" href="#relaciones" role="tab" aria-controls="relaciones" aria-selected="true">Patrones relacionados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="ejemplos-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="meta-tab" data-toggle="tab" href="#meta" role="tab" aria-controls="meta" aria-selected="true">Metadatos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+                                <div class="container parte">
+			El usuario quiere tener una representación visual del conjunto de datos que le permita comprender
+			el comportamiento de los datos.
+		</div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container parte">
+                                    <div>
+		<p>Crear un gráfico bidimensional indicando las dimensiones (largo y ancho), el tipo de gráfico (p. ej., barras, torta, dispersión) y la fuente de datos. La fuente de datos es una “vista de datos” derivada de operaciones de agregación (contar, sumar, etc.) aplicadas sobre las entidades del Modelo Conceptual del Genoma que se quiere representar. La vista de datos debe codificarse en formato bidimensional para ser consumida por el gráfico.</p>
+<p>Para mejorar el análisis de los datos, el gráfico creado puede ser utilizado como un filtro visual y dinámico. El gráfico puede ser conectado a otros gráficos de tal manera que al pulsar un sector de datos del gráfico (p. ej., una barra, en el gráfico de barras), los otros gráficos conectados actualicen automáticamente su visualización de acuerdo con el filtro pulsado.</p>
+
+		</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="relaciones" role="tabpanel" aria-labelledby="relaciones-tab">
+                                <div class="container parte">
+                                    <ul>
+                                        <li>Asociaci&oacute;n (relacionado a)</li>
+                                        <ul>
+                                            <li type="squeare">
+                                                <a href="idiograma.html">Idiograma</a>
+                                            </li>
+                                            <li type="squeare">
+                                                <a href="filtro_genomico.html">Filtro gen&oacute;mico</a>
+                                            </li>
+                                        </ul>
+                                        <li>Agregaci&oacute;n (tiene un)</li>
+                                        <ul></ul>
+                                        <li>Especializaci&oacute;n (es un)</li>
+                                        <ul></ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="esquema" role="tabpanel" aria-labelledby="esquema-tab">
+                                <div class="container parte">
+                                    <img src="grafico/esquema.png">
+                                    <div class="titulo_image">Imagen 6.24 Esquema del patrón Gráfico</div>
+                                    <p>
+			<p>El patrón se implementa instanciando la clase “Chart” que representa un componente visual de la interfaz de usuario y que al ser representado muestra un gráfico de dos dimensiones. La instanciación del patrón supone la especificación del ancho (“width”), alto (“height”), y el tipo de gráfico (“typeChart”) que puede ser, por ejemplo, gráfico de barras, gráfico de torta, etc. Los datos para representar el gráfico son provistos por la clase “DataSource”. Esta clase no es parte del MCGH, sin embargo, ha sido incluida en el esquema para representar a la “vista de datos” resultante de realizar operaciones de agregación sobre los datos originales del MCGH y que está expresada en formato clave-valor.</p>
+<p>La relación recursiva en la clase “Chart” indica las conexiones con otros gráficos permitiendo formar un ambiente gráfico total o parcialmente conectado. La operación “selectedRegion” es ejecutada cuando un sector de datos del gráfico se selecciona enviando mensajes a los otros gráficos que estén conectados y que están registrados en el atributo “connected_to”.</p>
+
+			
+		</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container parte">
+                                    <img src="grafico/ejemplo1.png">
+                                    <div class="titulo_image">Imagen 6.25 Gr&aacute;ficos de distribuci&oacute;n de mutaciones. Fuente: ICGC Data Portal.</div>
+                                    <p>
+					La Imagen 6.25 presenta cuatro gráficos estadísticos acerca de la distribución de las mutaciones (variaciones genéticas) disponibles en el repositorio de datos del sitio ICGC Data Portal. El primer
+					gráfico representa mediante barras la frecuencia de variaciones en función del tipo de consecuencia que causan. Los tres gráficos son gráficos de sectores que presentan el porcentaje de
+					mutaciones respecto a: la plataforma utilizada para su secuenciación (p. ej., el sector de mayor área corresponde a mutaciones secuenciadas con la plataforma Illumina HiSeq), el estado de
+					verificación (p. ej., el sector de mayor área corresponde a mutaciones no probadas) y el tipo de variación (p. ej., el sector de mayor área corresponde a variaciones del tipo “sustitución”).
+				</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="meta" role="tabpanel" aria-labelledby="meta-tab">
+                                <div class="res">
+                                    <div>
+                                        <span class="tl">Alias</span><span class="vl">Ninguno</span><span class="tl">Tipo</span><span class="vl">Patrón</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height:100px;"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright GenomUI Patterns @2018</p>
+                </div>
+            </footer>
+        </div>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

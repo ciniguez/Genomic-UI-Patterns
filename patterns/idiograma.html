@@ -1,0 +1,229 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomIU - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos_blanco.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+							Inicio
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+							Acerca de
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 menu_carlos azul">
+                    <div class="menu_carlos_interno">
+                        <h6>Acciones</h6>
+                        <ul>
+                            <li>
+                                <a href="buscar.html">Buscar</a>
+                            </li>
+                            <li>
+                                <a href="cargar_datos.html">Cargar datos</a>
+                            </li>
+                            <li>
+                                <a href="operacion_conjuntos.html">Operador de Conjuntos</a>
+                            </li>
+                            <li>
+                                <a href="secuencia_acciones.html">Secuencia de acciones</a>
+                            </li>
+                        </ul>
+                        <h6>Filtro</h6>
+                        <ul>
+                            <li>
+                                <a href="filtro_genomico.html">Filtro Gen&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="selector_regiones.html">Selector Regiones</a>
+                            </li>
+                        </ul>
+                        <h6>Visualizar</h6>
+                        <ul>
+                            <li>
+                                <a href="idiograma.html">Ideograma</a>
+                            </li>
+                            <li>
+                                <a href="grafico.html">Gr&aacute;fico</a>
+                            </li>
+                            <li>
+                                <a href="pista_comparativa.html">Pistas comparativas</a>
+                            </li>
+                            <li>
+                                <a href="circulo_cromosomico.html">Circulo Cromos&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="columnas_ocultas.html">Columnas ocultas</a>
+                            </li>
+                            <li>
+                                <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                            </li>
+                        </ul>
+                        <h6>Genericos</h6>
+                        <ul>
+                            <li>
+                                <a href="navegacion_continua.html">Navegaci&oacute;n continua</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6">
+                    <div class="separador"></div>
+                    <div class="container">
+                        <h1 class="tituloPatron">Idiograma</h1>
+                        <p class="text-center font-weight-bold">
+                            <span class="tituloPatron">Problema:</span>
+			¿Cómo visualizar el conjunto de cromosomas de una especie?
+		
+                        </p>
+                        <div class="text-center">
+                            <p>
+                                <img src="idiograma/portada.png">
+                            </p>
+                            <div class="titulo_image">Imagen 6.26 Idiograma de la especie humana (GRCh38.p). Fuente: e!Ensembl</div>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="contexto-tab" data-toggle="tab" href="#contexto" role="tab" aria-controls="contexto" aria-selected="false">Contexto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="solucion-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="esquema-tab" data-toggle="tab" href="#esquema" role="tab" aria-controls="esquema" aria-selected="false">Esquema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="relaciones-tab" data-toggle="tab" href="#relaciones" role="tab" aria-controls="relaciones" aria-selected="true">Patrones relacionados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="ejemplos-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="meta-tab" data-toggle="tab" href="#meta" role="tab" aria-controls="meta" aria-selected="true">Metadatos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+                                <div class="container parte">
+			El investigador quiere visualizar el <i>cariotipo</i> (la organización del conjunto cromosómico de un organismo) para identificar anomalías cromosómicas causantes de malformaciones o de enfermedades. Este tipo de análisis se realiza especialmente en estudios citogenéticos.
+		</div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container parte">
+                                    <div>
+		<p>Mostrar un <i>Idiograma</i> (o mapa citogenético). Un Idiograma, también conocido como cariograma, es una representación gráfica del cariotipo que expresa la organización del conjunto de cromosomas de una especie (Oliva et al., 2013).</p>
+<p>Para crear un Idiograma:</p>
+<ul>
+<li>Agregar un componente visual (p. ej., panel) que sirva como contenedor de los cromosomas. Definir el tamaño (ancho y largo) y orientación del contenedor. El tamaño del contenedor define la <i>escala de dibujo</i>. La orientación define la <i>posición</i> del Idiograma, pudiendo ser <i>horizontal</i> o <i>vertical</i>.</li>
+<li>En el contenedor, dibujar los cromosomas ordenados ascendentemente por su número, dejando los cromosomas XY, si se incluyen, al final del conjunto de cromosomas. Respetar la escala de dibujo de tal manera que la diferencia de tamaño entre los cromosomas sea visible.</li>
+<li>Centrómero. – (opcional) Si los cromosomas definen el centrómero, brazo largo (q) y brazo corto (p), entonces dibujar los cromosomas con el brazo corto hacia arriba y el brazo largo hacia abajo. Si la orientación en el paso 1 es vertical, entonces el brazo largo debe ser dibujado hacia abajo. Si la orientación es horizontal, entonces el brazo largo debe ser dibujado hacia la derecha.</li>
+<li>Dibujar el <i>patrón de bandas</i> en cada cromosoma (ver “Patrón de Bandas”, más abajo).</li>
+</ul>
+<div class="resaltado">
+<p><b>Patrón de bandas:</b></p>
+<p>Las bandas cromosómicas ayudan a identificar a cada cromosoma y localizar los loci genéticos (lugares dentro de un cromosoma) asociados a patologías relevantes. Las bandas son el resultado de la observación por microscopio al teñir el cromosoma con químicos y su visualización está definida por sectores representados en escala de grises.</p> 
+<p>La nomenclatura de las bandas está dada por el <i>International System for Chromosome Nomenclature</i> (ISCN) y distingue jerárquicamente la delimitación por <i>cromosoma</i>, <i>brazo</i>, <i>región</i>, <i>banda</i> y <i>sub-banda</i>. Las regiones, bandas y sub-bandas se enumeran ascendentemente empezando por 1, siendo 1 la banda más cercana al <i>centrómero</i> (el punto centro del cromosoma).</p>
+<p>Por ejemplo, la Imagen 6.27a muestra la nomenclatura 7q31.2 que indica que se hace referencia a un sector dentro del cromosoma siete, brazo largo (q), región tres, banda uno, y separado por el punto, la sub-banda 2. La Imagen 6.27b, obtenida con <a href="http://www.ncbi.nlm.nih.gov/genome/tools/gdp">Genome Decoration Page</a>, representa gráficamente la posición citogenética 7q31.2 que corresponde a la región de pares de bases desde 117,479,963 a 117,668,665 en el cromosoma 7 (utilizando la versión actualizada 109.20190607 de la especie Homo sapiens, GRCh38.p13).</p> 
+ <img src="idiograma/explicacion.png"/>
+<div class="titulo_image">Imagen 6.27 a) Ejemplo de nomenclatura ISCN y b) representación de la posición 7q31.2 obtenida con Genome Decoration Page</div>
+<p>Los datos del patrón de bandas pueden ser obtenidos del NCBI a través de ficheros disponibles en su cuenta de <a href="ftp://ftp.ncbi.nlm.nih.gov/pub/gdp/">FTP</a> y que su nombre inicia con el formato ideogram_<tax_id>, donde “tax_id” es el identificador de la taxonomía del organismo que en el caso del Homo Sapiens es 9606.</p>
+</div>
+
+		</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="relaciones" role="tabpanel" aria-labelledby="relaciones-tab">
+                                <div class="container parte">
+                                    <ul>
+                                        <li>Asociaci&oacute;n (relacionado a)</li>
+                                        <ul>
+                                            <li type="squeare">
+                                                <a href="selector_regiones.html">Selector de Regiones</a>
+                                            </li>
+                                            <li type="squeare">
+                                                <a href="grafico.html">Gr&aacute;fico</a>
+                                            </li>
+                                        </ul>
+                                        <li>Agregaci&oacute;n (tiene un)</li>
+                                        <ul>
+                                            <li type="squeare">
+                                                <a href="grafico.html">Gr&aacute;fico</a>
+                                            </li>
+                                        </ul>
+                                        <li>Especializaci&oacute;n (es un)</li>
+                                        <ul></ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="esquema" role="tabpanel" aria-labelledby="esquema-tab">
+                                <div class="container parte">
+                                    <img src="idiograma/esquema.png">
+                                    <div class="titulo_image">Imagen 6.28 Esquema para el patrón Idiograma</div>
+                                    <p>
+			
+		<p>El patrón Idiograma se crea instanciando la clase “IdiogramPanel” (Imagen 6.28) la cual representa el panel gráfico en la interfaz de usuario donde se muestran los cromosomas dibujados. El idiograma se compone de uno o varios cromosomas dibujados (clase “ChromosomeGraph”) y cada cromosoma puede presentar su patrón de bandas (clase “Band”). Si el idiograma se compone de varios cromosomas, su visualización será similar a la Imagen 6.26. Si el idiograma se compone de un solo cromosoma, su visualización será similar al de la Imagen 6.29b.</p>
+<p>La clase “ChromosomeGraph” está relacionada a la clase “chromosome” desde donde obtiene los datos para graficar los cromosomas. Cada cromosoma se grafica considerando los atributos de la clase: ancho (“width”), alto (“height”) y etiqueta (“label”). El cromosoma permite interacciones representadas por operaciones como seleccionar (“select”), desplazar (“pan”), acercar y alejar (zoomIn y zoomOut, respectivamente). Además, el cromosoma puede resaltar posiciones de ciertos elementos del genoma como son, por ejemplo, variaciones genéticas o genes. A estas posiciones se las ha denominado “anotaciones” y provienen de la clase “AnnotationElement”. La clase “AnnotationElement” no es propia del Modelo Conceptual del Genoma, sino que ha sido introducida en este diagrama para generalizar el tipo de anotaciones que pueden representarse sobre la secuencia del cromosoma.</p>
+<p>En el panel del Idiograma (clase “IdiogramPanel”), los Idiogramas se presentan ordenados por el número de cromosoma (“identifier”). </p>
+<p>La clase “Band” tiene una relación recursiva para representar a la sección, banda y sub-banda. Estos datos son suministrados por la clase “cytoband” del modelo conceptual. </p>
+
+			
+		</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container parte">
+                                    <img src="idiograma/ejemplo1.png">
+                                    <div class="titulo_image">Imagen 6.29 Idiograma total del genoma e idiograma particular de un cromosoma. Fuente: Genome Maps</div>
+                                    <p>
+					La Imagen 6.29 muestra una porción de la interfaz de usuario de Genome Maps (Príncipe Felipe Research Center, 2015), donde se muestra dos implementaciones del patrón Idiograma; una
+					resaltada por el
+					recuadro en color rojo y otra bajo el recuadro rojo representando un solo cromosoma. La primera implementación muestra el Idiograma dispuesto horizontalmente y en una sola fila,
+					con 23 pares de
+					cromosomas de la especie humana: 22 pares de cromosomas autosomas y un par de cromosomas gonosomas (X y o Y, siendo XX para el sexo femenino, y XY para el sexo masculino). La
+					segunda muestra un
+					solo cromosoma dispuesto horizontalmente con bandas etiquetadas con la nomenclatura de las bandas.
+				</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="meta" role="tabpanel" aria-labelledby="meta-tab">
+                                <div class="res">
+                                    <div>
+                                        <span class="tl">Alias</span><span class="vl">Ninguno</span><span class="tl">Tipo</span><span class="vl">Patrón</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height:100px;"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright GenomUI Patterns @2018</p>
+                </div>
+            </footer>
+        </div>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

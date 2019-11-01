@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="en">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>GenomIU - Patterns</title>
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/heroic-features.css" rel="stylesheet">
+        <link href="../css/carlos_blanco.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg color1 fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo.svg"></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">
+							Inicio
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+							Acerca de
+							<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <div class="row text-left">
+                <div class="col-lg-3 col-md-4 mb-6 menu_carlos azul">
+                    <div class="menu_carlos_interno">
+                        <h6>Acciones</h6>
+                        <ul>
+                            <li>
+                                <a href="buscar.html">Buscar</a>
+                            </li>
+                            <li>
+                                <a href="cargar_datos.html">Cargar datos</a>
+                            </li>
+                            <li>
+                                <a href="operacion_conjuntos.html">Operador de Conjuntos</a>
+                            </li>
+                            <li>
+                                <a href="secuencia_acciones.html">Secuencia de acciones</a>
+                            </li>
+                        </ul>
+                        <h6>Filtro</h6>
+                        <ul>
+                            <li>
+                                <a href="filtro_genomico.html">Filtro Gen&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="selector_regiones.html">Selector Regiones</a>
+                            </li>
+                        </ul>
+                        <h6>Visualizar</h6>
+                        <ul>
+                            <li>
+                                <a href="idiograma.html">Ideograma</a>
+                            </li>
+                            <li>
+                                <a href="grafico.html">Gr&aacute;fico</a>
+                            </li>
+                            <li>
+                                <a href="pista_comparativa.html">Pistas comparativas</a>
+                            </li>
+                            <li>
+                                <a href="circulo_cromosomico.html">Circulo Cromos&oacute;mico</a>
+                            </li>
+                            <li>
+                                <a href="columnas_ocultas.html">Columnas ocultas</a>
+                            </li>
+                            <li>
+                                <a href="navegador_genomico.html">Navegador Gen&oacute;mico</a>
+                            </li>
+                        </ul>
+                        <h6>Genericos</h6>
+                        <ul>
+                            <li>
+                                <a href="navegacion_continua.html">Navegaci&oacute;n continua</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 mb-6">
+                    <div class="separador"></div>
+                    <div class="container">
+                        <h1 class="tituloPatron">Pista Comparativa</h1>
+                        <p class="text-center font-weight-bold">
+                            <span class="tituloPatron">Problema:</span>Comparar visualmente varias secuencias genómicas respecto a una posición (locus) específica y común para todas las secuencias
+                        </p>
+                        <div class="text-center">
+                            <p>
+                                <img src="pista_comparativa/portada.png">
+                            </p>
+                            <div class="titulo_image">Imagen 6.30 Pistas con anotaciones genómicas (UCSC Genes, RefSeq Genes). Fuente: ChromoZoom</div>
+                        </div>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="contexto-tab" data-toggle="tab" href="#contexto" role="tab" aria-controls="contexto" aria-selected="false">Contexto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="solucion-tab" data-toggle="tab" href="#solucion" role="tab" aria-controls="solucion" aria-selected="false">Soluci&oacute;n</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="esquema-tab" data-toggle="tab" href="#esquema" role="tab" aria-controls="esquema" aria-selected="false">Esquema</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="relaciones-tab" data-toggle="tab" href="#relaciones" role="tab" aria-controls="relaciones" aria-selected="true">Patrones relacionados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="ejemplos-tab" data-toggle="tab" href="#ejemplos" role="tab" aria-controls="ejemplos" aria-selected="false">Ejemplos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="meta-tab" data-toggle="tab" href="#meta" role="tab" aria-controls="meta" aria-selected="true">Metadatos</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="contexto" role="tabpanel" aria-labelledby="contexto-tab">
+                                <div class="container parte">
+			El estudio genómico incluye comparar muestras de variaciones genéticas (p. ej., muestras de integrantes de una familia) con anotaciones genómicas provenientes de diferentes fuentes (p.
+			ej., dbSNP,
+			ENCODE, UCSC, ClinVar, KEGG), para interpretar el significado de las variaciones de las muestras. La comparación a diferentes niveles de detalle (desde bases genéticas hasta genes o
+			cromosomas)
+			supone alta carga cognitiva al usuario.
+		</div>
+                            </div>
+                            <div class="tab-pane fade" id="solucion" role="tabpanel" aria-labelledby="solucion-tab">
+                                <div class="container parte">
+                                    <div> <p>Presentar las secuencias genómicas a través de un sistema de pistas que permita la comparación visual entre ellas. Una pista es una representación unidimensional (es decir, una sola dimensión: la posición) del contenido de una muestra o secuencia genética. Usar el patrón Cargar Muestra para configurar la secuencia de datos que se quiere visualizar en la pista. La presentación y disposición de las pistas debe cumplir: i) adyacencia (las pistas se sitúan una junto a la otra, ya sea en una orientación vertical u horizontal); ii) alineación (todas las pistas deben presentar las secuencias alineadas respecto a una escala de posiciones de referencia); iii) escala (los controles de alejamiento o acercamiento modifican la escala de visualización definiendo un rango visible de bases de ADN, por lo tanto, todas las pistas deben presentar su contenido considerando el número de bases de visible).</p>
+<p>La orientación del sistema de pistas es horizontal, ocupando en gran medida el espacio de la interfaz de usuario. Opcionalmente, el orden de las pistas puede ser modificado por el usuario.</p>
+<p>El sistema de pistas sincroniza la navegación unidimensional por todas las pistas. Es decir, si el usuario se desplaza a una posición específica de una secuencia contenida en una pista, todo el conjunto de pistas se desplaza a la misma posición y al mismo tiempo. Los controles del nivel de acercamiento o alejamiento permiten explorar las secuencias desde una perspectiva global o detallada.</p> 
+<p>Esta solución es aplicable cuando se dispone de un espacio amplio (vertical u horizontal) en la interfaz de usuario.</p>
+
+		</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="relaciones" role="tabpanel" aria-labelledby="relaciones-tab">
+                                <div class="container parte">
+                                    <ul>
+                                        <li>Asociaci&oacute;n (relacionado a)</li>
+                                        <ul></ul>
+                                        <li>Agregaci&oacute;n (tiene un)</li>
+                                        <ul>
+                                            <li type="squeare">
+                                                <a href="cargar_datos.html">Cargar datos</a>
+                                            </li>
+                                        </ul>
+                                        <li>Especializaci&oacute;n (es un)</li>
+                                        <ul></ul>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="esquema" role="tabpanel" aria-labelledby="esquema-tab">
+                                <div class="container parte">
+                                    <img src="pista_comparativa/esquema.png">
+                                    <div class="titulo_image">Imagen 6.31 Esquema del patrón Pista Comparativa</div>
+                                    <p>
+			 <p>El patrón se crea instanciando la clase “ComparativeTracks” (Imagen 6.31) la cual contiene un idiograma (es decir, el patrón Idiograma representado porla clase “Idiograma”) y varias pistas (clase “Track”). El patrón Idiograma muestra un único cromosoma (generalmente dispuesto horizontalmente) que sirve como marco de referencia de navegación ya que establece el rango de coordenadas en el que las pistas deben mostrar sus datos. Por ejemplo, si en el idiograma se ejecuta una acción de “acercamiento”, todas las pistas automáticamente cambian su estado de visualización a las nuevas coordenadas establecidas por el acercamiento en el idiograma.</p>
+ <p>Las pistas, ubicadas generalmente bajo el patrón Idiograma, muestran datos de una fuente de datos externa (clase “ExternalDataSource”) como por ejemplo dbSNP. Cada pista muestra el nombre de la fuente de datos (“name”) y los datos entre una posición inicial (start_locus) y final (end_locus). La clase ComparativeTraks controla las coordenadas de visualización y configura dichas coordenadas a todas las pistas, de tal manera que todas las pistas sincronicen su visualización al mismo rango de coordenadas. 
+Las interacciones de navegación se realizan desde el idiograma o desde las acciones propias de la clase ComparativeTracks. Por ejemplo, si una acción de acercamiento es realizado mediante el idiograma (ver patrón Idiograma), las acciones son detectadas por la clase ComparativeTracks y esta ejecuta su operación “zoomIn()” que redimensiona la escala de todas las pistas e indica los nuevos valores de inicio (start_locus) y fin (end_locus) para todas las pistas.</p>
+
+
+		</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ejemplos" role="tabpanel" aria-labelledby="ejemplos-tab">
+                                <div class="container parte">
+                                    <img src="pista_comparativa/ejemplo1.png">
+                                    <div class="titulo_image">Imagen 6.32 Pistas de secuencias de datos de GBrowse</div>
+                                    <p>La Imagen 6.32 muestra una parte de la interfaz del navegador genómico GBrowse (Stein, 2013) con varias pistas horizontales alineadas verticalmente respecto a la posición indicada por
+					la escala entre las 660 kilobases y las 760 kilobases (primera pista).</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="meta" role="tabpanel" aria-labelledby="meta-tab">
+                                <div class="res">
+                                    <div>
+                                        <span class="tl">Alias</span><span class="vl">Ninguno</span><span class="tl">Tipo</span><span class="vl">Patrón</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="height:100px;"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="py-2 ci-footer fixed-bottom">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright GenomUI Patterns @2018</p>
+                </div>
+            </footer>
+        </div>
+        <script src="../vendor/jquery/jquery.min.js"></script><script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

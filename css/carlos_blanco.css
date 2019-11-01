@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*FF976C*/
+.logo1{ color:#FFCD2D;float: left; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';font-weight: bolder;}
+.ci_centro{ text-align:center;}
+/* Colors */
+.color1{
+	background-color: #e9ecef;
+	-webkit-box-shadow: 3px 10px 50px -15px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 10px 50px -15px rgba(0,0,0,0.75);
+	box-shadow: 3px 10px 50px -15px rgba(0,0,0,0.75);
+}
+.navbar{
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 0rem;
+	}
+.ci-footer{
+	background-color: #000000;
+	font-size:0.8em;
+	}
+/* Styles */
+.titulo_image {font-size: 0.8em; text-align: center; margin-bottom: 1em}
+.res {
+	margin-bottom: 10px;
+	font-size:0.8em;
+}
+.res .tl{
+	color: #666;
+	font-weight: bold;
+}
+.res .vl{
+	margin-left: 10px;
+	margin-right:50px;
+}
+.menu_carlos{
+	padding-left:30px;
+	padding-top:30px;}
+.menu_carlos_interno{
+	font-size: 0.8em;
+	height: 100%;
+    width: 100%;
+	padding-left:30px;
+	overflow-y: scroll;
+	overflow-x: hidden;}
+a{color: #7E7D7F;}
+a:hover { color: #BF542D;}
+.menu_carlos a:link { text-decoration:none;}
+.tituloPatron{
+	color: #BF542D;
+	font-weight:bold;
+}
+.menu_carlos h6{
+	font-size: 1.2em;
+	color: #BF542D;
+	font-weight:bold;
+	}
+.resaltado{
+  border: white 8px groove;
+  padding:15px;
+}
+p{text-indent: 1em;}
+i {font-family: 'Times New Roman", Times, serif';}
+img{
+	display:block;
+	margin:auto;
+}
+.parte{ 
+	padding:30px;
+	text-align: justify; 
+	text-justify: inter-word;
+	}
+/* TABS */
+.separador{width:100%; height: 30px;}
